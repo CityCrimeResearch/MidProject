@@ -23,8 +23,8 @@
   <datasources>
     <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
       <aliases enabled='yes' />
-      <column caption='매개 변수 1' datatype='string' name='[매개 변수 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;병상 수 비율&quot;'>
-        <calculation class='tableau' formula='&quot;병상 수 비율&quot;' />
+      <column caption='매개 변수 1' datatype='string' name='[매개 변수 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;총범죄율&quot;'>
+        <calculation class='tableau' formula='&quot;총범죄율&quot;' />
         <members>
           <member value='&quot;사회불안지수&quot;' />
           <member value='&quot;1인가구 비율&quot;' />
@@ -1713,6 +1713,9 @@
       <column caption='1인가구 비율(남성)' datatype='real' name='[1인가구_비율(남성)]' role='measure' type='quantitative' />
       <column caption='1인가구 비율(여성)' datatype='real' name='[1인가구_비율(여성)]' role='measure' type='quantitative' />
       <column caption='1인가구 비율' datatype='real' name='[1인가구_비율]' role='measure' type='quantitative' />
+      <column caption='총 범죄율(10만 명당)' datatype='real' name='[Calculation_1201898167123845120]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='([총 범죄 발생 건수] / [인구소계]) * 100000' />
+      </column>
       <column caption='selectedMeasure' datatype='real' name='[Calculation_491455325514342400]' role='measure' type='quantitative'>
         <calculation class='tableau' formula='CASE [Parameters].[매개 변수 1]&#13;&#10;WHEN &quot;사회불안지수&quot; THEN [사회불안지수]&#13;&#10;WHEN &quot;1인가구 비율&quot; THEN [1인가구_비율]&#13;&#10;WHEN &quot;강력범죄율&quot; THEN [강력범죄율]&#13;&#10;WHEN &quot;총범죄율&quot; THEN [총범죄율]&#13;&#10;WHEN &quot;소계(10만명당자살률)&quot;THEN [소계(10만명당자살률)]&#13;&#10;WHEN &quot;봉사활동 역정규화&quot; THEN [봉사활동_역정규화]&#13;&#10;WHEN &quot;이혼율&quot; THEN [이혼율]&#13;&#10;WHEN &quot;청소년비행 비율&quot; THEN [청소년비행_비율]&#13;&#10;WHEN &quot;중학교 학업중단율&quot; THEN [중학교 학업중단율]&#13;&#10;WHEN &quot;정신의료기관비율&quot; THEN [정신의료기관비율]&#13;&#10;WHEN &quot;고등학교 학업중단율&quot; THEN [고등학교 학업중단율]&#13;&#10;WHEN &quot;외국인비율&quot; THEN [외국인비율]&#13;&#10;WHEN &quot;인구 비율&quot; THEN [인구 비율]&#13;&#10;WHEN &quot;병상 수 비율&quot; THEN [병상 수 비율]&#13;&#10;END' />
       </column>
@@ -2335,8 +2338,8 @@
         <semantic-value key='[State].[Name]' value='&quot;서울특별시&quot;' />
       </semantic-values>
       <datasource-dependencies datasource='Parameters'>
-        <column caption='매개 변수 1' datatype='string' name='[매개 변수 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;병상 수 비율&quot;'>
-          <calculation class='tableau' formula='&quot;병상 수 비율&quot;' />
+        <column caption='매개 변수 1' datatype='string' name='[매개 변수 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;총범죄율&quot;'>
+          <calculation class='tableau' formula='&quot;총범죄율&quot;' />
         </column>
       </datasource-dependencies>
       <object-graph>
@@ -2408,8 +2411,8 @@
             <mapsource name='Tableau' />
           </mapsources>
           <datasource-dependencies datasource='Parameters'>
-            <column caption='매개 변수 1' datatype='string' name='[매개 변수 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;병상 수 비율&quot;'>
-              <calculation class='tableau' formula='&quot;병상 수 비율&quot;' />
+            <column caption='매개 변수 1' datatype='string' name='[매개 변수 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;총범죄율&quot;'>
+              <calculation class='tableau' formula='&quot;총범죄율&quot;' />
             </column>
           </datasource-dependencies>
           <datasource-dependencies datasource='federated.1jyrs8t10i6unt1aojmfz0peg4df'>
@@ -2497,58 +2500,336 @@
       <simple-id uuid='{7156918B-FF22-4A2E-8EE2-F46DB3DFF7A0}' />
     </worksheet>
     <worksheet name='시트 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#edc948' fontname='배달의민족 주아' fontsize='16'>범죄 발생율</run>
+          </formatted-text>
+        </title>
+      </layout-options>
       <table>
         <view>
           <datasources>
             <datasource caption='정규화_수정_진짜_최종' name='federated.1jyrs8t10i6unt1aojmfz0peg4df' />
-            <datasource caption='매개 변수' name='Parameters' />
           </datasources>
-          <datasource-dependencies datasource='Parameters'>
-            <column caption='매개 변수 1' datatype='string' name='[매개 변수 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;병상 수 비율&quot;'>
-              <calculation class='tableau' formula='&quot;병상 수 비율&quot;' />
-            </column>
-          </datasource-dependencies>
           <datasource-dependencies datasource='federated.1jyrs8t10i6unt1aojmfz0peg4df'>
-            <column caption='1인가구 비율' datatype='real' name='[1인가구_비율]' role='measure' type='quantitative' />
-            <column caption='selectedMeasure' datatype='real' name='[Calculation_491455325514342400]' role='measure' type='quantitative'>
-              <calculation class='tableau' formula='CASE [Parameters].[매개 변수 1]&#13;&#10;WHEN &quot;사회불안지수&quot; THEN [사회불안지수]&#13;&#10;WHEN &quot;1인가구 비율&quot; THEN [1인가구_비율]&#13;&#10;WHEN &quot;강력범죄율&quot; THEN [강력범죄율]&#13;&#10;WHEN &quot;총범죄율&quot; THEN [총범죄율]&#13;&#10;WHEN &quot;소계(10만명당자살률)&quot;THEN [소계(10만명당자살률)]&#13;&#10;WHEN &quot;봉사활동 역정규화&quot; THEN [봉사활동_역정규화]&#13;&#10;WHEN &quot;이혼율&quot; THEN [이혼율]&#13;&#10;WHEN &quot;청소년비행 비율&quot; THEN [청소년비행_비율]&#13;&#10;WHEN &quot;중학교 학업중단율&quot; THEN [중학교 학업중단율]&#13;&#10;WHEN &quot;정신의료기관비율&quot; THEN [정신의료기관비율]&#13;&#10;WHEN &quot;고등학교 학업중단율&quot; THEN [고등학교 학업중단율]&#13;&#10;WHEN &quot;외국인비율&quot; THEN [외국인비율]&#13;&#10;WHEN &quot;인구 비율&quot; THEN [인구 비율]&#13;&#10;WHEN &quot;병상 수 비율&quot; THEN [병상 수 비율]&#13;&#10;END' />
+            <column caption='총 범죄율(10만 명당)' datatype='real' name='[Calculation_1201898167123845120]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='([총 범죄 발생 건수] / [인구소계]) * 100000' />
             </column>
             <column-instance column='[자치구별]' derivation='None' name='[none:자치구별:nk]' pivot='key' type='nominal' />
-            <column-instance column='[Calculation_491455325514342400]' derivation='Sum' name='[sum:Calculation_491455325514342400:qk]' pivot='key' type='quantitative' />
-            <column datatype='real' name='[강력범죄율]' role='measure' type='quantitative' />
-            <column datatype='real' name='[고등학교 학업중단율]' role='measure' type='quantitative' />
-            <column datatype='real' name='[병상 수 비율]' role='measure' type='quantitative' />
-            <column caption='봉사활동 역정규화' datatype='real' name='[봉사활동_역정규화]' role='measure' type='quantitative' />
-            <column datatype='real' name='[사회불안지수]' role='measure' type='quantitative' />
-            <column datatype='real' name='[소계(10만명당자살률)]' role='measure' type='quantitative' />
-            <column datatype='real' name='[외국인비율]' role='measure' type='quantitative' />
-            <column datatype='real' name='[이혼율]' role='measure' type='quantitative' />
-            <column datatype='real' name='[인구 비율]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_1201898167123845120]' derivation='Sum' name='[sum:Calculation_1201898167123845120:qk]' pivot='key' type='quantitative' />
+            <column datatype='integer' name='[인구소계]' role='measure' type='quantitative' />
             <column datatype='string' name='[자치구별]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
-            <column datatype='real' name='[정신의료기관비율]' role='measure' type='quantitative' />
-            <column datatype='real' name='[중학교 학업중단율]' role='measure' type='quantitative' />
-            <column caption='청소년비행 비율' datatype='real' name='[청소년비행_비율]' role='measure' type='quantitative' />
-            <column datatype='real' name='[총범죄율]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[총 범죄 발생 건수]' role='measure' type='quantitative' />
           </datasource-dependencies>
-          <computed-sort column='[federated.1jyrs8t10i6unt1aojmfz0peg4df].[none:자치구별:nk]' direction='DESC' using='[federated.1jyrs8t10i6unt1aojmfz0peg4df].[sum:Calculation_491455325514342400:qk]' />
+          <computed-sort column='[federated.1jyrs8t10i6unt1aojmfz0peg4df].[none:자치구별:nk]' direction='DESC' using='[federated.1jyrs8t10i6unt1aojmfz0peg4df].[sum:Calculation_1201898167123845120:qk]' />
           <aggregation value='true' />
         </view>
-        <style />
+        <style>
+          <style-rule element='axis'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.1jyrs8t10i6unt1aojmfz0peg4df].[none:자치구별:nk]' value='108' />
+          </style-rule>
+          <style-rule element='field-labels'>
+            <format attr='font-size' value='12' />
+            <format attr='font-family' value='배달의민족 주아' />
+            <format attr='color' value='#ffffff' />
+            <format attr='font-weight' value='normal' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' field='[federated.1jyrs8t10i6unt1aojmfz0peg4df].[none:자치구별:nk]' value='#ffffff' />
+            <format attr='font-family' field='[federated.1jyrs8t10i6unt1aojmfz0peg4df].[none:자치구별:nk]' value='배달의민족 주아' />
+            <format attr='font-family' field='[federated.1jyrs8t10i6unt1aojmfz0peg4df].[sum:Calculation_1201898167123845120:qk]' value='배달의민족 주아' />
+            <format attr='color' field='[federated.1jyrs8t10i6unt1aojmfz0peg4df].[sum:Calculation_1201898167123845120:qk]' value='#f5f5f5' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1jyrs8t10i6unt1aojmfz0peg4df].[sum:Calculation_1201898167123845120:qk]' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-diverging'>
+                <color>#adadad</color>
+                <color>#b4b4b4</color>
+                <color>#bbbbbb</color>
+                <color>#c3c3c3</color>
+                <color>#cacaca</color>
+                <color>#d1d1d1</color>
+                <color>#d9d9d9</color>
+                <color>#dfdfba</color>
+                <color>#e5e599</color>
+                <color>#ecec76</color>
+                <color>#f2f250</color>
+                <color>#f8f829</color>
+                <color>#ffff00</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#333333' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='line-pattern-only' value='solid' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+        </style>
         <panes>
-          <pane selection-relaxation-option='selection-relaxation-allow'>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow'>
             <view>
               <breakdown value='auto' />
             </view>
             <mark class='Automatic' />
             <encodings>
-              <color column='[federated.1jyrs8t10i6unt1aojmfz0peg4df].[none:자치구별:nk]' />
+              <color column='[federated.1jyrs8t10i6unt1aojmfz0peg4df].[sum:Calculation_1201898167123845120:qk]' />
+              <text column='[federated.1jyrs8t10i6unt1aojmfz0peg4df].[sum:Calculation_1201898167123845120:qk]' />
             </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-family' value='배달의민족 주아' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
           </pane>
         </panes>
         <rows>[federated.1jyrs8t10i6unt1aojmfz0peg4df].[none:자치구별:nk]</rows>
-        <cols>[federated.1jyrs8t10i6unt1aojmfz0peg4df].[sum:Calculation_491455325514342400:qk]</cols>
+        <cols>[federated.1jyrs8t10i6unt1aojmfz0peg4df].[sum:Calculation_1201898167123845120:qk]</cols>
       </table>
       <simple-id uuid='{9DEFBFB6-78B6-4CED-BE61-FFDAA30BCFD8}' />
+    </worksheet>
+    <worksheet name='시트 2 (2)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#a0cbe8' fontname='배달의민족 주아' fontsize='16'>서울 특별시 인구 수</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='정규화_수정_진짜_최종' name='federated.1jyrs8t10i6unt1aojmfz0peg4df' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1jyrs8t10i6unt1aojmfz0peg4df'>
+            <column-instance column='[자치구별]' derivation='None' name='[none:자치구별:nk]' pivot='key' type='nominal' />
+            <column-instance column='[인구소계]' derivation='Sum' name='[sum:인구소계:qk]' pivot='key' type='quantitative' />
+            <column datatype='integer' name='[인구소계]' role='measure' type='quantitative' />
+            <column datatype='string' name='[자치구별]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.1jyrs8t10i6unt1aojmfz0peg4df].[none:자치구별:nk]' direction='DESC' using='[federated.1jyrs8t10i6unt1aojmfz0peg4df].[sum:인구소계:qk]' />
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.1jyrs8t10i6unt1aojmfz0peg4df].[none:자치구별:nk]' value='108' />
+          </style-rule>
+          <style-rule element='field-labels'>
+            <format attr='font-size' value='12' />
+            <format attr='font-family' value='배달의민족 주아' />
+            <format attr='color' value='#ffffff' />
+            <format attr='font-weight' value='normal' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' field='[federated.1jyrs8t10i6unt1aojmfz0peg4df].[none:자치구별:nk]' value='#ffffff' />
+            <format attr='font-family' field='[federated.1jyrs8t10i6unt1aojmfz0peg4df].[none:자치구별:nk]' value='배달의민족 주아' />
+            <format attr='font-size' field='[federated.1jyrs8t10i6unt1aojmfz0peg4df].[sum:인구소계:qk]' value='12' />
+            <format attr='font-family' field='[federated.1jyrs8t10i6unt1aojmfz0peg4df].[sum:인구소계:qk]' value='배달의민족 주아' />
+            <format attr='color' field='[federated.1jyrs8t10i6unt1aojmfz0peg4df].[sum:인구소계:qk]' value='#f5f5f5' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#333333' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='line-pattern-only' value='solid' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1jyrs8t10i6unt1aojmfz0peg4df].[sum:인구소계:qk]' />
+              <text column='[federated.1jyrs8t10i6unt1aojmfz0peg4df].[sum:인구소계:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-family' value='배달의민족 주아' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1jyrs8t10i6unt1aojmfz0peg4df].[none:자치구별:nk]</rows>
+        <cols>[federated.1jyrs8t10i6unt1aojmfz0peg4df].[sum:인구소계:qk]</cols>
+      </table>
+      <simple-id uuid='{84EA03EC-B9C7-4198-BFF4-67AE39A346A9}' />
+    </worksheet>
+    <worksheet name='시트 2 (3)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#edc948' fontname='배달의민족 주아' fontsize='16'>범죄 발생율</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='정규화_수정_진짜_최종' name='federated.1jyrs8t10i6unt1aojmfz0peg4df' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1jyrs8t10i6unt1aojmfz0peg4df'>
+            <column caption='총 범죄율(10만 명당)' datatype='real' name='[Calculation_1201898167123845120]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='([총 범죄 발생 건수] / [인구소계]) * 100000' />
+            </column>
+            <column-instance column='[자치구별]' derivation='None' name='[none:자치구별:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1201898167123845120]' derivation='Sum' name='[sum:Calculation_1201898167123845120:qk]' pivot='key' type='quantitative' />
+            <column datatype='integer' name='[인구소계]' role='measure' type='quantitative' />
+            <column datatype='string' name='[자치구별]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+            <column datatype='integer' name='[총 범죄 발생 건수]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.1jyrs8t10i6unt1aojmfz0peg4df].[none:자치구별:nk]' direction='DESC' using='[federated.1jyrs8t10i6unt1aojmfz0peg4df].[sum:Calculation_1201898167123845120:qk]' />
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.1jyrs8t10i6unt1aojmfz0peg4df].[none:자치구별:nk]' value='108' />
+          </style-rule>
+          <style-rule element='field-labels'>
+            <format attr='font-size' value='12' />
+            <format attr='font-family' value='배달의민족 주아' />
+            <format attr='color' value='#ffffff' />
+            <format attr='font-weight' value='normal' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' field='[federated.1jyrs8t10i6unt1aojmfz0peg4df].[none:자치구별:nk]' value='#ffffff' />
+            <format attr='font-family' field='[federated.1jyrs8t10i6unt1aojmfz0peg4df].[none:자치구별:nk]' value='배달의민족 주아' />
+            <format attr='font-family' field='[federated.1jyrs8t10i6unt1aojmfz0peg4df].[sum:Calculation_1201898167123845120:qk]' value='배달의민족 주아' />
+            <format attr='color' field='[federated.1jyrs8t10i6unt1aojmfz0peg4df].[sum:Calculation_1201898167123845120:qk]' value='#f5f5f5' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1jyrs8t10i6unt1aojmfz0peg4df].[sum:Calculation_1201898167123845120:qk]' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-diverging'>
+                <color>#adadad</color>
+                <color>#b4b4b4</color>
+                <color>#bbbbbb</color>
+                <color>#c3c3c3</color>
+                <color>#cacaca</color>
+                <color>#d1d1d1</color>
+                <color>#d9d9d9</color>
+                <color>#dfdfba</color>
+                <color>#e5e599</color>
+                <color>#ecec76</color>
+                <color>#f2f250</color>
+                <color>#f8f829</color>
+                <color>#ffff00</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#333333' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='line-pattern-only' value='solid' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1jyrs8t10i6unt1aojmfz0peg4df].[sum:Calculation_1201898167123845120:qk]' />
+              <text column='[federated.1jyrs8t10i6unt1aojmfz0peg4df].[sum:Calculation_1201898167123845120:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-family' value='배달의민족 주아' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1jyrs8t10i6unt1aojmfz0peg4df].[none:자치구별:nk]</rows>
+        <cols>[federated.1jyrs8t10i6unt1aojmfz0peg4df].[sum:Calculation_1201898167123845120:qk]</cols>
+      </table>
+      <simple-id uuid='{5A573F71-A4FA-467D-865C-6096668287C3}' />
     </worksheet>
     <worksheet name='시트 3'>
       <table>
@@ -2574,12 +2855,15 @@
             </view>
             <mark class='Shape' />
             <encodings>
+              <text column='[federated.1jyrs8t10i6unt1aojmfz0peg4df].[none:자치구별:nk]' />
               <lod column='[federated.1jyrs8t10i6unt1aojmfz0peg4df].[none:자치구별:nk]' />
             </encodings>
             <style>
               <style-rule element='mark'>
                 <format attr='density-kernel-size' value='1.5272375345230103' />
                 <format attr='shape' value=':filled/circle' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
               </style-rule>
             </style>
           </pane>
@@ -2928,7 +3212,7 @@
       </cards>
       <simple-id uuid='{620D0EA4-20F9-4ABE-A11B-881A85C89379}' />
     </window>
-    <window class='worksheet' name='시트 2'>
+    <window class='worksheet' maximized='true' name='시트 2'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -2944,18 +3228,76 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='28'>
+          <strip size='2147483647'>
             <card type='title' />
           </strip>
         </edge>
         <edge name='right'>
           <strip size='160'>
             <card mode='compact' param='[Parameters].[매개 변수 1]' type='parameter' />
-            <card pane-specification-id='0' param='[federated.1jyrs8t10i6unt1aojmfz0peg4df].[none:자치구별:nk]' type='color' />
+            <card pane-specification-id='4' param='[federated.1jyrs8t10i6unt1aojmfz0peg4df].[sum:Calculation_1201898167123845120:qk]' type='color' />
           </strip>
         </edge>
       </cards>
       <simple-id uuid='{F5314722-AD00-466E-8697-522B6C6D9E43}' />
+    </window>
+    <window class='worksheet' name='시트 2 (3)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='compact' param='[Parameters].[매개 변수 1]' type='parameter' />
+            <card pane-specification-id='4' param='[federated.1jyrs8t10i6unt1aojmfz0peg4df].[sum:Calculation_1201898167123845120:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D4A41480-4CE6-4E94-AF32-D138E4E53D5F}' />
+    </window>
+    <window class='worksheet' name='시트 2 (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='compact' param='[Parameters].[매개 변수 1]' type='parameter' />
+            <card pane-specification-id='4' param='[federated.1jyrs8t10i6unt1aojmfz0peg4df].[sum:인구소계:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{AA8FB292-CA56-4BAC-96CD-25C048CD15F8}' />
     </window>
     <window class='worksheet' name='시트 3'>
       <cards>
@@ -2985,7 +3327,7 @@
       </cards>
       <simple-id uuid='{E036BD49-985E-4EA9-97A0-81E2C73A043C}' />
     </window>
-    <window class='worksheet' maximized='true' name='시트 4'>
+    <window class='worksheet' name='시트 4'>
       <cards>
         <edge name='left'>
           <strip size='160'>
