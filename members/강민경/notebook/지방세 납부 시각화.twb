@@ -1,0 +1,616 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20251.25.0313.2002                               -->
+<workbook original-version='18.1' source-build='2025.1.0 (20251.25.0313.2002)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='구별_7년간_지방세' inline='true' name='federated.05fe5cv0nbgank17kyffb0og7wd2' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='구별_7년간_지방세' name='textscan.0h9j7dp0805udu16j3gw81hr49ub'>
+            <connection class='textscan' directory='C:/Users/tsmce/Desktop/workspace/mid-project/MidProject/MidProject-1/data/processed' filename='구별_7년간_지방세.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0h9j7dp0805udu16j3gw81hr49ub' name='구별_7년간_지방세.csv' table='[구별_7년간_지방세#csv]' type='table'>
+          <columns character-set='UTF-8' header='no' locale='ko_KR' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='F2' ordinal='1' />
+            <column datatype='integer' name='F3' ordinal='2' />
+            <column datatype='integer' name='F4' ordinal='3' />
+            <column datatype='integer' name='F5' ordinal='4' />
+            <column datatype='integer' name='F6' ordinal='5' />
+            <column datatype='integer' name='F7' ordinal='6' />
+            <column datatype='integer' name='F8' ordinal='7' />
+            <column datatype='integer' name='F9' ordinal='8' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[구별_7년간_지방세.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;ko&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₩&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;false&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;ko_KR&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[구별_7년간_지방세.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[구별_7년간_지방세.csv_26B02DCB0AF5413392FB89A9205587F7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F2</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F2]</local-name>
+            <parent-name>[구별_7년간_지방세.csv]</parent-name>
+            <remote-alias>F2</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <object-id>[구별_7년간_지방세.csv_26B02DCB0AF5413392FB89A9205587F7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F3</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F3]</local-name>
+            <parent-name>[구별_7년간_지방세.csv]</parent-name>
+            <remote-alias>F3</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[구별_7년간_지방세.csv_26B02DCB0AF5413392FB89A9205587F7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F4</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F4]</local-name>
+            <parent-name>[구별_7년간_지방세.csv]</parent-name>
+            <remote-alias>F4</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[구별_7년간_지방세.csv_26B02DCB0AF5413392FB89A9205587F7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F5</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F5]</local-name>
+            <parent-name>[구별_7년간_지방세.csv]</parent-name>
+            <remote-alias>F5</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[구별_7년간_지방세.csv_26B02DCB0AF5413392FB89A9205587F7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F6</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F6]</local-name>
+            <parent-name>[구별_7년간_지방세.csv]</parent-name>
+            <remote-alias>F6</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[구별_7년간_지방세.csv_26B02DCB0AF5413392FB89A9205587F7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F7</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F7]</local-name>
+            <parent-name>[구별_7년간_지방세.csv]</parent-name>
+            <remote-alias>F7</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[구별_7년간_지방세.csv_26B02DCB0AF5413392FB89A9205587F7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F8</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F8]</local-name>
+            <parent-name>[구별_7년간_지방세.csv]</parent-name>
+            <remote-alias>F8</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[구별_7년간_지방세.csv_26B02DCB0AF5413392FB89A9205587F7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F9</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F9]</local-name>
+            <parent-name>[구별_7년간_지방세.csv]</parent-name>
+            <remote-alias>F9</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[구별_7년간_지방세.csv_26B02DCB0AF5413392FB89A9205587F7]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='지방세 [백만원]' datatype='integer' name='[Calculation_474566826147155968]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[F3]+[F4]+[F5]+[F6]+[F7]+[F8]+[F9]' />
+      </column>
+      <column datatype='integer' hidden='true' name='[F1]' role='measure' type='quantitative' />
+      <column caption='구' datatype='string' name='[F2]' role='dimension' type='nominal' />
+      <column caption='2017' datatype='integer' name='[F3]' role='measure' type='quantitative' />
+      <column caption='2018' datatype='integer' name='[F4]' role='measure' type='quantitative' />
+      <column caption='2019' datatype='integer' name='[F5]' role='measure' type='quantitative' />
+      <column caption='2020' datatype='integer' name='[F6]' role='measure' type='quantitative' />
+      <column caption='2021' datatype='integer' name='[F7]' role='measure' type='quantitative' />
+      <column caption='2022' datatype='integer' name='[F8]' role='measure' type='quantitative' />
+      <column caption='2023' datatype='integer' name='[F9]' role='measure' type='quantitative' />
+      <column caption='구별_7년간_지방세.csv' datatype='table' name='[__tableau_internal_object_id__].[구별_7년간_지방세.csv_26B02DCB0AF5413392FB89A9205587F7]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='ko_KR' class='hyper' dbname='C:/Users/tsmce/AppData/Local/Temp/TableauTemp/#TableauTemp_0yrmrrc06dh6hn1fggiek1q4l03c.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='05/30/2025 08:22:47 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>F2</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[F2]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F2</remote-alias>
+              <ordinal>0</ordinal>
+              <family>구별_7년간_지방세.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>27</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+              <object-id>[구별_7년간_지방세.csv_26B02DCB0AF5413392FB89A9205587F7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F3</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[F3]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F3</remote-alias>
+              <ordinal>1</ordinal>
+              <family>구별_7년간_지방세.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>27</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[구별_7년간_지방세.csv_26B02DCB0AF5413392FB89A9205587F7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F4</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[F4]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F4</remote-alias>
+              <ordinal>2</ordinal>
+              <family>구별_7년간_지방세.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>27</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[구별_7년간_지방세.csv_26B02DCB0AF5413392FB89A9205587F7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F5</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[F5]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F5</remote-alias>
+              <ordinal>3</ordinal>
+              <family>구별_7년간_지방세.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>27</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[구별_7년간_지방세.csv_26B02DCB0AF5413392FB89A9205587F7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F6</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[F6]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F6</remote-alias>
+              <ordinal>4</ordinal>
+              <family>구별_7년간_지방세.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>27</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[구별_7년간_지방세.csv_26B02DCB0AF5413392FB89A9205587F7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F7</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[F7]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F7</remote-alias>
+              <ordinal>5</ordinal>
+              <family>구별_7년간_지방세.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>27</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[구별_7년간_지방세.csv_26B02DCB0AF5413392FB89A9205587F7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F8</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[F8]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F8</remote-alias>
+              <ordinal>6</ordinal>
+              <family>구별_7년간_지방세.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>27</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[구별_7년간_지방세.csv_26B02DCB0AF5413392FB89A9205587F7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F9</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[F9]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F9</remote-alias>
+              <ordinal>7</ordinal>
+              <family>구별_7년간_지방세.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>27</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[구별_7년간_지방세.csv_26B02DCB0AF5413392FB89A9205587F7]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;대한민국&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='구별_7년간_지방세.csv' id='구별_7년간_지방세.csv_26B02DCB0AF5413392FB89A9205587F7'>
+            <properties context=''>
+              <relation connection='textscan.0h9j7dp0805udu16j3gw81hr49ub' name='구별_7년간_지방세.csv' table='[구별_7년간_지방세#csv]' type='table'>
+                <columns character-set='UTF-8' header='no' locale='ko_KR' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='string' name='F2' ordinal='1' />
+                  <column datatype='integer' name='F3' ordinal='2' />
+                  <column datatype='integer' name='F4' ordinal='3' />
+                  <column datatype='integer' name='F5' ordinal='4' />
+                  <column datatype='integer' name='F6' ordinal='5' />
+                  <column datatype='integer' name='F7' ordinal='6' />
+                  <column datatype='integer' name='F8' ordinal='7' />
+                  <column datatype='integer' name='F9' ordinal='8' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='시트 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>2017-2023 지방세 납부액</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='구별_7년간_지방세' name='federated.05fe5cv0nbgank17kyffb0og7wd2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.05fe5cv0nbgank17kyffb0og7wd2'>
+            <column caption='지방세 [백만원]' datatype='integer' name='[Calculation_474566826147155968]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[F3]+[F4]+[F5]+[F6]+[F7]+[F8]+[F9]' />
+            </column>
+            <column caption='구' datatype='string' name='[F2]' role='dimension' type='nominal' />
+            <column caption='2017' datatype='integer' name='[F3]' role='measure' type='quantitative' />
+            <column caption='2018' datatype='integer' name='[F4]' role='measure' type='quantitative' />
+            <column caption='2019' datatype='integer' name='[F5]' role='measure' type='quantitative' />
+            <column caption='2020' datatype='integer' name='[F6]' role='measure' type='quantitative' />
+            <column caption='2021' datatype='integer' name='[F7]' role='measure' type='quantitative' />
+            <column caption='2022' datatype='integer' name='[F8]' role='measure' type='quantitative' />
+            <column caption='2023' datatype='integer' name='[F9]' role='measure' type='quantitative' />
+            <column-instance column='[F2]' derivation='None' name='[none:F2:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_474566826147155968]' derivation='Sum' name='[sum:Calculation_474566826147155968:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.05fe5cv0nbgank17kyffb0og7wd2].[none:F2:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:F2:nk]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[none:F2:nk]' member='&quot;구별&quot;' />
+                <groupfilter function='member' level='[none:F2:nk]' member='&quot;본청&quot;' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.05fe5cv0nbgank17kyffb0og7wd2].[none:F2:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.05fe5cv0nbgank17kyffb0og7wd2].[sum:Calculation_474566826147155968:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.05fe5cv0nbgank17kyffb0og7wd2].[none:F2:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.05fe5cv0nbgank17kyffb0og7wd2].[none:F2:nk]' value='48' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#ffffff' />
+            <format attr='font-weight' value='bold' />
+            <format attr='font-family' value='YouandiModern HeadRegular' />
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='color' value='#ffffff' />
+            <format attr='font-weight' value='bold' />
+            <format attr='font-family' value='YouandiModern HeadRegular' />
+          </style-rule>
+          <style-rule element='tooltip'>
+            <format attr='color' value='#ffffff' />
+            <format attr='font-family' value='YouandiModern' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#fec21c' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.05fe5cv0nbgank17kyffb0og7wd2].[sum:Calculation_474566826147155968:qk]</rows>
+        <cols>[federated.05fe5cv0nbgank17kyffb0og7wd2].[none:F2:nk]</cols>
+      </table>
+      <simple-id uuid='{EC6A8CE4-1C68-45BA-857C-7D8FBD173819}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='시트 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='29'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.05fe5cv0nbgank17kyffb0og7wd2].[none:F2:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{FAD11724-260C-4931-972F-0752ACB76ADF}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='시트 1' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>

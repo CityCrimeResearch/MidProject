@@ -1,0 +1,835 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20251.25.0313.2002                               -->
+<workbook original-version='18.1' source-build='2025.1.0 (20251.25.0313.2002)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='서울특별시_지역내총부가가치_수정본' inline='true' name='federated.0yo1f8501nh4zx1ek4ic71tkje6t' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='서울특별시_지역내총부가가치_수정본' name='textscan.0lwa1fc0m9vme616bru2p0jr6mif'>
+            <connection class='textscan' directory='C:/Users/tsmce/Desktop/workspace/mid-project/MidProject/MidProject-1/data/processed' filename='서울특별시_지역내총부가가치_수정본.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0lwa1fc0m9vme616bru2p0jr6mif' name='서울특별시_지역내총부가가치_수정본.csv' table='[서울특별시_지역내총부가가치_수정본#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='ko_KR' separator=','>
+            <column datatype='string' name='자치구(1)' ordinal='0' />
+            <column datatype='string' name='경제활동별(1)' ordinal='1' />
+            <column datatype='integer' name='2021' ordinal='2' />
+            <column datatype='integer' name='2021.1' ordinal='3' />
+            <column datatype='integer' name='2021.2' ordinal='4' />
+            <column datatype='integer' name='2021.3' ordinal='5' />
+            <column datatype='integer' name='2021.4' ordinal='6' />
+            <column datatype='integer' name='2021.5' ordinal='7' />
+            <column datatype='integer' name='2021.6' ordinal='8' />
+            <column datatype='integer' name='2021.7' ordinal='9' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[서울특별시_지역내총부가가치_수정본.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;ko&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₩&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;ko_KR&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>자치구(1)</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[자치구(1)]</local-name>
+            <parent-name>[서울특별시_지역내총부가가치_수정본.csv]</parent-name>
+            <remote-alias>자치구(1)</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <object-id>[서울특별시_지역내총부가가치_수정본.csv_88119E684BE048A184A87F4F12AF4C10]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>경제활동별(1)</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[경제활동별(1)]</local-name>
+            <parent-name>[서울특별시_지역내총부가가치_수정본.csv]</parent-name>
+            <remote-alias>경제활동별(1)</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <object-id>[서울특별시_지역내총부가가치_수정본.csv_88119E684BE048A184A87F4F12AF4C10]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2021</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[2021]</local-name>
+            <parent-name>[서울특별시_지역내총부가가치_수정본.csv]</parent-name>
+            <remote-alias>2021</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[서울특별시_지역내총부가가치_수정본.csv_88119E684BE048A184A87F4F12AF4C10]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2021.1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[2021.1]</local-name>
+            <parent-name>[서울특별시_지역내총부가가치_수정본.csv]</parent-name>
+            <remote-alias>2021.1</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[서울특별시_지역내총부가가치_수정본.csv_88119E684BE048A184A87F4F12AF4C10]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2021.2</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[2021.2]</local-name>
+            <parent-name>[서울특별시_지역내총부가가치_수정본.csv]</parent-name>
+            <remote-alias>2021.2</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[서울특별시_지역내총부가가치_수정본.csv_88119E684BE048A184A87F4F12AF4C10]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2021.3</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[2021.3]</local-name>
+            <parent-name>[서울특별시_지역내총부가가치_수정본.csv]</parent-name>
+            <remote-alias>2021.3</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[서울특별시_지역내총부가가치_수정본.csv_88119E684BE048A184A87F4F12AF4C10]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2021.4</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[2021.4]</local-name>
+            <parent-name>[서울특별시_지역내총부가가치_수정본.csv]</parent-name>
+            <remote-alias>2021.4</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[서울특별시_지역내총부가가치_수정본.csv_88119E684BE048A184A87F4F12AF4C10]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2021.5</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[2021.5]</local-name>
+            <parent-name>[서울특별시_지역내총부가가치_수정본.csv]</parent-name>
+            <remote-alias>2021.5</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[서울특별시_지역내총부가가치_수정본.csv_88119E684BE048A184A87F4F12AF4C10]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2021.6</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[2021.6]</local-name>
+            <parent-name>[서울특별시_지역내총부가가치_수정본.csv]</parent-name>
+            <remote-alias>2021.6</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[서울특별시_지역내총부가가치_수정본.csv_88119E684BE048A184A87F4F12AF4C10]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2021.7</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[2021.7]</local-name>
+            <parent-name>[서울특별시_지역내총부가가치_수정본.csv]</parent-name>
+            <remote-alias>2021.7</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[서울특별시_지역내총부가가치_수정본.csv_88119E684BE048A184A87F4F12AF4C10]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='서울특별시_지역내총부가가치_수정본.csv' datatype='table' name='[__tableau_internal_object_id__].[서울특별시_지역내총부가가치_수정본.csv_88119E684BE048A184A87F4F12AF4C10]' role='measure' type='quantitative' />
+      <column datatype='string' name='[자치구(1)]' role='dimension' type='nominal' />
+      <column-instance column='[자치구(1)]' derivation='None' name='[none:자치구(1):nk]' pivot='key' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='ko_KR' class='hyper' dbname='C:/Users/tsmce/AppData/Local/Temp/TableauTemp/#TableauTemp_0noh9ze146p3cf11ong891dgrf48.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='06/02/2025 05:33:20 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>자치구(1)</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[자치구(1)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>자치구(1)</remote-alias>
+              <ordinal>0</ordinal>
+              <family>서울특별시_지역내총부가가치_수정본.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>26</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+              <object-id>[서울특별시_지역내총부가가치_수정본.csv_88119E684BE048A184A87F4F12AF4C10]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>경제활동별(1)</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[경제활동별(1)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>경제활동별(1)</remote-alias>
+              <ordinal>1</ordinal>
+              <family>서울특별시_지역내총부가가치_수정본.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>18</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+              <object-id>[서울특별시_지역내총부가가치_수정본.csv_88119E684BE048A184A87F4F12AF4C10]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>2021</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[2021]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>2021</remote-alias>
+              <ordinal>2</ordinal>
+              <family>서울특별시_지역내총부가가치_수정본.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>414</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[서울특별시_지역내총부가가치_수정본.csv_88119E684BE048A184A87F4F12AF4C10]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>2021.1</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[2021.1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>2021.1</remote-alias>
+              <ordinal>3</ordinal>
+              <family>서울특별시_지역내총부가가치_수정본.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>414</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[서울특별시_지역내총부가가치_수정본.csv_88119E684BE048A184A87F4F12AF4C10]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>2021.2</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[2021.2]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>2021.2</remote-alias>
+              <ordinal>4</ordinal>
+              <family>서울특별시_지역내총부가가치_수정본.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>413</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[서울특별시_지역내총부가가치_수정본.csv_88119E684BE048A184A87F4F12AF4C10]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>2021.3</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[2021.3]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>2021.3</remote-alias>
+              <ordinal>5</ordinal>
+              <family>서울특별시_지역내총부가가치_수정본.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>410</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[서울특별시_지역내총부가가치_수정본.csv_88119E684BE048A184A87F4F12AF4C10]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>2021.4</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[2021.4]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>2021.4</remote-alias>
+              <ordinal>6</ordinal>
+              <family>서울특별시_지역내총부가가치_수정본.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>386</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[서울특별시_지역내총부가가치_수정본.csv_88119E684BE048A184A87F4F12AF4C10]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>2021.5</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[2021.5]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>2021.5</remote-alias>
+              <ordinal>7</ordinal>
+              <family>서울특별시_지역내총부가가치_수정본.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>413</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[서울특별시_지역내총부가가치_수정본.csv_88119E684BE048A184A87F4F12AF4C10]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>2021.6</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[2021.6]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>2021.6</remote-alias>
+              <ordinal>8</ordinal>
+              <family>서울특별시_지역내총부가가치_수정본.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>414</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[서울특별시_지역내총부가가치_수정본.csv_88119E684BE048A184A87F4F12AF4C10]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>2021.7</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[2021.7]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>2021.7</remote-alias>
+              <ordinal>9</ordinal>
+              <family>서울특별시_지역내총부가가치_수정본.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>414</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[서울특별시_지역내총부가가치_수정본.csv_88119E684BE048A184A87F4F12AF4C10]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:자치구(1):nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;노원구&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;강남구&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;용산구&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;관악구&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;중랑구&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;마포구&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;도봉구&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;광진구&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;양천구&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;강동구&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;은평구&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;성북구&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;구로구&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;서대문구&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;서초구&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;송파구&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;영등포구&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;동대문구&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;금천구&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;강북구&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;종로구&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;성동구&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;동작구&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;강서구&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;중구&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;대한민국&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='서울특별시_지역내총부가가치_수정본.csv' id='서울특별시_지역내총부가가치_수정본.csv_88119E684BE048A184A87F4F12AF4C10'>
+            <properties context=''>
+              <relation connection='textscan.0lwa1fc0m9vme616bru2p0jr6mif' name='서울특별시_지역내총부가가치_수정본.csv' table='[서울특별시_지역내총부가가치_수정본#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='ko_KR' separator=','>
+                  <column datatype='string' name='자치구(1)' ordinal='0' />
+                  <column datatype='string' name='경제활동별(1)' ordinal='1' />
+                  <column datatype='integer' name='2021' ordinal='2' />
+                  <column datatype='integer' name='2021.1' ordinal='3' />
+                  <column datatype='integer' name='2021.2' ordinal='4' />
+                  <column datatype='integer' name='2021.3' ordinal='5' />
+                  <column datatype='integer' name='2021.4' ordinal='6' />
+                  <column datatype='integer' name='2021.5' ordinal='7' />
+                  <column datatype='integer' name='2021.6' ordinal='8' />
+                  <column datatype='integer' name='2021.7' ordinal='9' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='서울시 구별 총 부가가치'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#ffffff' fontname='YouandiModern HeadRegular'>서울시 구별 총 부가가치 (2021.01~07)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='서울특별시_지역내총부가가치_수정본' name='federated.0yo1f8501nh4zx1ek4ic71tkje6t' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0yo1f8501nh4zx1ek4ic71tkje6t'>
+            <column datatype='integer' name='[2021]' role='measure' type='quantitative' />
+            <column-instance column='[자치구(1)]' derivation='None' name='[none:자치구(1):nk]' pivot='key' type='nominal' />
+            <column-instance column='[2021]' derivation='Sum' name='[sum:2021:qk]' pivot='key' type='quantitative' />
+            <column datatype='string' name='[자치구(1)]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0yo1f8501nh4zx1ek4ic71tkje6t].[sum:2021:qk]' included-values='non-null' />
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0yo1f8501nh4zx1ek4ic71tkje6t].[none:자치구(1):nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0yo1f8501nh4zx1ek4ic71tkje6t].[sum:2021:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0yo1f8501nh4zx1ek4ic71tkje6t].[sum:2021:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0yo1f8501nh4zx1ek4ic71tkje6t].[sum:2021:qk]' scope='rows' value='금액 [백만원]' />
+            <format attr='tick-color' field='[federated.0yo1f8501nh4zx1ek4ic71tkje6t].[sum:2021:qk]' value='#ffffff' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='font-family' field='[federated.0yo1f8501nh4zx1ek4ic71tkje6t].[sum:2021:qk]' value='YouandiModern' />
+            <format attr='font-family' field='[federated.0yo1f8501nh4zx1ek4ic71tkje6t].[none:자치구(1):nk]' value='YouandiModern' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='background-color' value='#333333' />
+            <format attr='background-color' field='[federated.0yo1f8501nh4zx1ek4ic71tkje6t].[sum:2021:qk]' value='#333333' />
+            <format attr='background-color' field='[federated.0yo1f8501nh4zx1ek4ic71tkje6t].[none:자치구(1):nk]' value='#333333' />
+          </style-rule>
+          <style-rule element='field-labels'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='field-labels-decoration'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='field-labels-spanner'>
+            <format attr='background-color' scope='rows' value='#000000' />
+            <format attr='background-color' scope='cols' value='#000000' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-family' field='[federated.0yo1f8501nh4zx1ek4ic71tkje6t].[sum:2021:qk]' value='YouandiModern' />
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='background-color' value='#333333' />
+            <format attr='background-color' data-class='subtotal' value='#333333' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#333333' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='font-family' value='YouandiModern' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='font-family' value='YouandiModern' />
+          </style-rule>
+          <style-rule element='tooltip'>
+            <format attr='font-family' value='YouandiModern' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-family' value='YouandiModern' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='mark-color' value='#fec21c' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0yo1f8501nh4zx1ek4ic71tkje6t].[sum:2021:qk]</rows>
+        <cols>[federated.0yo1f8501nh4zx1ek4ic71tkje6t].[none:자치구(1):nk]</cols>
+      </table>
+      <simple-id uuid='{3B389495-0A52-49D4-B364-4AC676DA4068}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='서울시 구별 총 부가가치'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='28'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0yo1f8501nh4zx1ek4ic71tkje6t].[none:자치구(1):nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{56E8141C-1091-437A-B527-0807C79919B4}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='서울시 구별 총 부가가치' width='192'>
+      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
+      6HZBU99XAAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>

@@ -1,0 +1,785 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20251.25.0313.2002                               -->
+<workbook original-version='18.1' source-build='2025.1.0 (20251.25.0313.2002)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='건강보험_급여구별여구별' inline='true' name='federated.1pxwii1041gymw1g94khe1745z1c' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='건강보험_급여구별여구별' name='textscan.1bmtjlw166yk4a10e7ro70wq71ub'>
+            <connection class='textscan' directory='C:/Users/tsmce/Desktop/workspace/mid-project/MidProject/MidProject-1/data/processed' filename='건강보험_급여구별여구별.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1bmtjlw166yk4a10e7ro70wq71ub' name='건강보험_급여구별여구별.csv' table='[건강보험_급여구별여구별#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='ko_KR' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='자치구별' ordinal='1' />
+            <column datatype='string' name='현황별' ordinal='2' />
+            <column datatype='integer' name='소계' ordinal='3' />
+            <column datatype='integer' name='소계(건수)' ordinal='4' />
+            <column datatype='integer' name='직장(근로자)' ordinal='5' />
+            <column datatype='integer' name='직장(근로자)(건수)' ordinal='6' />
+            <column datatype='integer' name='공무원·교직원' ordinal='7' />
+            <column datatype='integer' name='공무원·교직원(건수)' ordinal='8' />
+            <column datatype='integer' name='지역' ordinal='9' />
+            <column datatype='integer' name='지역(건수)' ordinal='10' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[건강보험_급여구별여구별.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;ko&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₩&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;ko_KR&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[건강보험_급여구별여구별.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[건강보험_급여구별여구별.csv_733985A9DCAD4BA782F36899711BED44]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>자치구별</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[자치구별]</local-name>
+            <parent-name>[건강보험_급여구별여구별.csv]</parent-name>
+            <remote-alias>자치구별</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <object-id>[건강보험_급여구별여구별.csv_733985A9DCAD4BA782F36899711BED44]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>현황별</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[현황별]</local-name>
+            <parent-name>[건강보험_급여구별여구별.csv]</parent-name>
+            <remote-alias>현황별</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <object-id>[건강보험_급여구별여구별.csv_733985A9DCAD4BA782F36899711BED44]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>소계</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[소계]</local-name>
+            <parent-name>[건강보험_급여구별여구별.csv]</parent-name>
+            <remote-alias>소계</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[건강보험_급여구별여구별.csv_733985A9DCAD4BA782F36899711BED44]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>소계(건수)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[소계(건수)]</local-name>
+            <parent-name>[건강보험_급여구별여구별.csv]</parent-name>
+            <remote-alias>소계(건수)</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[건강보험_급여구별여구별.csv_733985A9DCAD4BA782F36899711BED44]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>직장(근로자)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[직장(근로자)]</local-name>
+            <parent-name>[건강보험_급여구별여구별.csv]</parent-name>
+            <remote-alias>직장(근로자)</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[건강보험_급여구별여구별.csv_733985A9DCAD4BA782F36899711BED44]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>직장(근로자)(건수)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[직장(근로자)(건수)]</local-name>
+            <parent-name>[건강보험_급여구별여구별.csv]</parent-name>
+            <remote-alias>직장(근로자)(건수)</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[건강보험_급여구별여구별.csv_733985A9DCAD4BA782F36899711BED44]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>공무원·교직원</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[공무원·교직원]</local-name>
+            <parent-name>[건강보험_급여구별여구별.csv]</parent-name>
+            <remote-alias>공무원·교직원</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[건강보험_급여구별여구별.csv_733985A9DCAD4BA782F36899711BED44]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>공무원·교직원(건수)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[공무원·교직원(건수)]</local-name>
+            <parent-name>[건강보험_급여구별여구별.csv]</parent-name>
+            <remote-alias>공무원·교직원(건수)</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[건강보험_급여구별여구별.csv_733985A9DCAD4BA782F36899711BED44]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>지역</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[지역]</local-name>
+            <parent-name>[건강보험_급여구별여구별.csv]</parent-name>
+            <remote-alias>지역</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[건강보험_급여구별여구별.csv_733985A9DCAD4BA782F36899711BED44]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>지역(건수)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[지역(건수)]</local-name>
+            <parent-name>[건강보험_급여구별여구별.csv]</parent-name>
+            <remote-alias>지역(건수)</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[건강보험_급여구별여구별.csv_733985A9DCAD4BA782F36899711BED44]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='건강보험_급여구별여구별.csv' datatype='table' name='[__tableau_internal_object_id__].[건강보험_급여구별여구별.csv_733985A9DCAD4BA782F36899711BED44]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[공무원·교직원]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[소계]' role='measure' type='quantitative' />
+      <column datatype='string' name='[자치구별]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[직장(근로자)(건수)]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[직장(근로자)]' role='measure' type='quantitative' />
+      <column datatype='string' name='[현황별]' role='dimension' type='nominal' />
+      <column-instance column='[자치구별]' derivation='None' name='[none:자치구별:nk]' pivot='key' type='nominal' />
+      <column-instance column='[현황별]' derivation='None' name='[none:현황별:nk]' pivot='key' type='nominal' />
+      <column-instance column='[공무원·교직원]' derivation='Sum' name='[sum:공무원·교직원:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[소계]' derivation='Sum' name='[sum:소계:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[직장(근로자)(건수)]' derivation='Sum' name='[sum:직장(근로자)(건수):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[직장(근로자)]' derivation='Sum' name='[sum:직장(근로자):qk]' pivot='key' type='quantitative' />
+      <group hidden='true' name='[제외(자치구별,현황별)]' name-style='unqualified' user:auto-column='exclude'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:자치구별:nk]' />
+          <groupfilter function='level-members' level='[none:현황별:nk]' />
+        </groupfilter>
+      </group>
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='ko_KR' class='hyper' dbname='C:/Users/tsmce/AppData/Local/Temp/TableauTemp/#TableauTemp_0p7h9ym0q1p9k417dxu2o0f7rghu.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='05/30/2025 07:08:57 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>F1</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[F1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F1</remote-alias>
+              <ordinal>0</ordinal>
+              <family>건강보험_급여구별여구별.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>100</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[건강보험_급여구별여구별.csv_733985A9DCAD4BA782F36899711BED44]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>자치구별</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[자치구별]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>자치구별</remote-alias>
+              <ordinal>1</ordinal>
+              <family>건강보험_급여구별여구별.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>25</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+              <object-id>[건강보험_급여구별여구별.csv_733985A9DCAD4BA782F36899711BED44]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>현황별</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[현황별]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>현황별</remote-alias>
+              <ordinal>2</ordinal>
+              <family>건강보험_급여구별여구별.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+              <object-id>[건강보험_급여구별여구별.csv_733985A9DCAD4BA782F36899711BED44]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>소계</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[소계]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>소계</remote-alias>
+              <ordinal>3</ordinal>
+              <family>건강보험_급여구별여구별.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>100</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[건강보험_급여구별여구별.csv_733985A9DCAD4BA782F36899711BED44]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>소계(건수)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[소계(건수)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>소계(건수)</remote-alias>
+              <ordinal>4</ordinal>
+              <family>건강보험_급여구별여구별.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>100</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[건강보험_급여구별여구별.csv_733985A9DCAD4BA782F36899711BED44]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>직장(근로자)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[직장(근로자)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>직장(근로자)</remote-alias>
+              <ordinal>5</ordinal>
+              <family>건강보험_급여구별여구별.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>100</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[건강보험_급여구별여구별.csv_733985A9DCAD4BA782F36899711BED44]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>직장(근로자)(건수)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[직장(근로자)(건수)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>직장(근로자)(건수)</remote-alias>
+              <ordinal>6</ordinal>
+              <family>건강보험_급여구별여구별.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>100</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[건강보험_급여구별여구별.csv_733985A9DCAD4BA782F36899711BED44]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>공무원·교직원</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[공무원·교직원]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>공무원·교직원</remote-alias>
+              <ordinal>7</ordinal>
+              <family>건강보험_급여구별여구별.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>100</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[건강보험_급여구별여구별.csv_733985A9DCAD4BA782F36899711BED44]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>공무원·교직원(건수)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[공무원·교직원(건수)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>공무원·교직원(건수)</remote-alias>
+              <ordinal>8</ordinal>
+              <family>건강보험_급여구별여구별.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>100</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[건강보험_급여구별여구별.csv_733985A9DCAD4BA782F36899711BED44]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>지역</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[지역]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>지역</remote-alias>
+              <ordinal>9</ordinal>
+              <family>건강보험_급여구별여구별.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>100</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[건강보험_급여구별여구별.csv_733985A9DCAD4BA782F36899711BED44]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>지역(건수)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[지역(건수)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>지역(건수)</remote-alias>
+              <ordinal>10</ordinal>
+              <family>건강보험_급여구별여구별.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>100</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[건강보험_급여구별여구별.csv_733985A9DCAD4BA782F36899711BED44]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:현황별:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;약국&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;합계&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;입원&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;외래&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1pxwii1041gymw1g94khe1745z1c].[sum:직장(근로자):qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.1pxwii1041gymw1g94khe1745z1c].[sum:직장(근로자)(건수):qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.1pxwii1041gymw1g94khe1745z1c].[sum:소계:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1pxwii1041gymw1g94khe1745z1c]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1pxwii1041gymw1g94khe1745z1c].[sum:공무원·교직원:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;대한민국&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='건강보험_급여구별여구별.csv' id='건강보험_급여구별여구별.csv_733985A9DCAD4BA782F36899711BED44'>
+            <properties context=''>
+              <relation connection='textscan.1bmtjlw166yk4a10e7ro70wq71ub' name='건강보험_급여구별여구별.csv' table='[건강보험_급여구별여구별#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='ko_KR' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='string' name='자치구별' ordinal='1' />
+                  <column datatype='string' name='현황별' ordinal='2' />
+                  <column datatype='integer' name='소계' ordinal='3' />
+                  <column datatype='integer' name='소계(건수)' ordinal='4' />
+                  <column datatype='integer' name='직장(근로자)' ordinal='5' />
+                  <column datatype='integer' name='직장(근로자)(건수)' ordinal='6' />
+                  <column datatype='integer' name='공무원·교직원' ordinal='7' />
+                  <column datatype='integer' name='공무원·교직원(건수)' ordinal='8' />
+                  <column datatype='integer' name='지역' ordinal='9' />
+                  <column datatype='integer' name='지역(건수)' ordinal='10' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='시트 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>건강보험료 납부 많은 지역</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='건강보험_급여구별여구별' name='federated.1pxwii1041gymw1g94khe1745z1c' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1pxwii1041gymw1g94khe1745z1c'>
+            <column-instance column='[자치구별]' derivation='None' name='[none:자치구별:nk]' pivot='key' type='nominal' />
+            <column-instance column='[소계]' derivation='Sum' name='[sum:소계:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[직장(근로자)]' derivation='Sum' name='[sum:직장(근로자):qk]' pivot='key' type='quantitative' />
+            <column datatype='integer' name='[소계]' role='measure' type='quantitative' />
+            <column datatype='string' name='[자치구별]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[직장(근로자)]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1pxwii1041gymw1g94khe1745z1c].[:Measure Names]'>
+            <groupfilter function='level-members' level='[:Measure Names]' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1pxwii1041gymw1g94khe1745z1c].[none:자치구별:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1pxwii1041gymw1g94khe1745z1c].[sum:직장(근로자):qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1pxwii1041gymw1g94khe1745z1c].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1pxwii1041gymw1g94khe1745z1c].[sum:소계:qk]' field-type='quantitative' max='40000000' min='0' range-type='fixed' scope='rows' type='space' />
+            <encoding attr='space' class='0' field='[federated.1pxwii1041gymw1g94khe1745z1c].[sum:직장(근로자):qk]' field-type='quantitative' max='30000000' min='0' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#333333' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='color' value='#ffffff' />
+            <format attr='font-family' value='YouandiModern HeadRegular' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='color' value='#ffffff' />
+            <format attr='font-weight' value='bold' />
+            <format attr='font-family' value='YouandiModern HeadRegular' />
+          </style-rule>
+          <style-rule element='tooltip'>
+            <format attr='color' value='#ffffff' />
+            <format attr='font-family' value='YouandiModern' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#fec21c' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='5' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1pxwii1041gymw1g94khe1745z1c].[sum:소계:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#fec21c' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='6' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1pxwii1041gymw1g94khe1745z1c].[sum:직장(근로자):qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#fec21c' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1pxwii1041gymw1g94khe1745z1c].[sum:소계:qk] + [federated.1pxwii1041gymw1g94khe1745z1c].[sum:직장(근로자):qk])</rows>
+        <cols>[federated.1pxwii1041gymw1g94khe1745z1c].[none:자치구별:nk]</cols>
+      </table>
+      <simple-id uuid='{555353A1-E7EB-4335-A360-49BB07B51704}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='시트 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='29'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1pxwii1041gymw1g94khe1745z1c].[:Measure Names]</field>
+            <field>[federated.1pxwii1041gymw1g94khe1745z1c].[none:현황별:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{36326F1F-0E32-4387-8254-D1641C8D6EBF}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='시트 2' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>

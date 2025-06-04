@@ -1,0 +1,1576 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20251.25.0313.2002                               -->
+<workbook original-version='18.1' source-build='2025.1.0 (20251.25.0313.2002)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='서울_자산__부채__소득_현황' inline='true' name='federated.17f1a9l19x2dlm19xdx6s0q1nvh4' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='서울_자산__부채__소득_현황' name='textscan.0eo88x10patgf11d0id2i0aberel'>
+            <connection class='textscan' directory='C:/Users/tsmce/Desktop/workspace/mid-project/MidProject/MidProject-1/data/processed' filename='서울_자산__부채__소득_현황.csv' password='' server='' />
+          </named-connection>
+          <named-connection caption='서울_자산__부채__소득_현황(2)' name='textscan.0ojsksa14w97lv1e6t2rg072by4d'>
+            <connection class='textscan' directory='C:/Users/tsmce/Desktop/workspace/mid-project/MidProject/MidProject-1/data/processed' filename='서울_자산__부채__소득_현황.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0eo88x10patgf11d0id2i0aberel' name='서울_자산__부채__소득_현황.csv' table='[서울_자산__부채__소득_현황#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='ko_KR' separator=','>
+            <column datatype='integer' name='년도' ordinal='0' />
+            <column datatype='real' name='가구분포 (%)' ordinal='1' />
+            <column datatype='real' name='가구원수 (명)' ordinal='2' />
+            <column datatype='real' name='가구주 연령 (세)' ordinal='3' />
+            <column datatype='integer' name='경상소득(전년도) (만원)' ordinal='4' />
+            <column datatype='integer' name='자산 (만원)' ordinal='5' />
+            <column datatype='integer' name='부채 (만원)' ordinal='6' />
+            <column datatype='integer' name='순자산액 (만원)' ordinal='7' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[서울_자산__부채__소득_현황.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;ko&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₩&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;ko_KR&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>년도</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[년도]</local-name>
+            <parent-name>[서울_자산__부채__소득_현황.csv]</parent-name>
+            <remote-alias>년도</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[서울_자산__부채__소득_현황.csv_BAB302AF079E4BFCB58E4C1F60914EC4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>가구분포 (%)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[가구분포 (%)]</local-name>
+            <parent-name>[서울_자산__부채__소득_현황.csv]</parent-name>
+            <remote-alias>가구분포 (%)</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[서울_자산__부채__소득_현황.csv_BAB302AF079E4BFCB58E4C1F60914EC4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>가구원수 (명)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[가구원수 (명)]</local-name>
+            <parent-name>[서울_자산__부채__소득_현황.csv]</parent-name>
+            <remote-alias>가구원수 (명)</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[서울_자산__부채__소득_현황.csv_BAB302AF079E4BFCB58E4C1F60914EC4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>가구주 연령 (세)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[가구주 연령 (세)]</local-name>
+            <parent-name>[서울_자산__부채__소득_현황.csv]</parent-name>
+            <remote-alias>가구주 연령 (세)</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[서울_자산__부채__소득_현황.csv_BAB302AF079E4BFCB58E4C1F60914EC4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>경상소득(전년도) (만원)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[경상소득(전년도) (만원)]</local-name>
+            <parent-name>[서울_자산__부채__소득_현황.csv]</parent-name>
+            <remote-alias>경상소득(전년도) (만원)</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[서울_자산__부채__소득_현황.csv_BAB302AF079E4BFCB58E4C1F60914EC4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>자산 (만원)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[자산 (만원)]</local-name>
+            <parent-name>[서울_자산__부채__소득_현황.csv]</parent-name>
+            <remote-alias>자산 (만원)</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[서울_자산__부채__소득_현황.csv_BAB302AF079E4BFCB58E4C1F60914EC4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>부채 (만원)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[부채 (만원)]</local-name>
+            <parent-name>[서울_자산__부채__소득_현황.csv]</parent-name>
+            <remote-alias>부채 (만원)</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[서울_자산__부채__소득_현황.csv_BAB302AF079E4BFCB58E4C1F60914EC4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>순자산액 (만원)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[순자산액 (만원)]</local-name>
+            <parent-name>[서울_자산__부채__소득_현황.csv]</parent-name>
+            <remote-alias>순자산액 (만원)</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[서울_자산__부채__소득_현황.csv_BAB302AF079E4BFCB58E4C1F60914EC4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>연평균 물가 상승률 (%)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[연평균 물가 상승률 (%)]</local-name>
+            <parent-name>[서울_자산__부채__소득_현황.csv]</parent-name>
+            <remote-alias>연평균 물가 상승률 (%)</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[서울_자산__부채__소득_현황.csv_BAB302AF079E4BFCB58E4C1F60914EC4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>부채/자산 (%)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[부채/자산 (%)]</local-name>
+            <parent-name>[서울_자산__부채__소득_현황.csv]</parent-name>
+            <remote-alias>부채/자산 (%)</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[서울_자산__부채__소득_현황.csv_BAB302AF079E4BFCB58E4C1F60914EC4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>범죄 발생 수 (건)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[범죄 발생 수 (건)]</local-name>
+            <parent-name>[서울_자산__부채__소득_현황.csv]</parent-name>
+            <remote-alias>범죄 발생 수 (건)</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[서울_자산__부채__소득_현황.csv_BAB302AF079E4BFCB58E4C1F60914EC4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>강력 범죄 발생 수 (건)</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[강력 범죄 발생 수 (건)]</local-name>
+            <parent-name>[서울_자산__부채__소득_현황.csv]</parent-name>
+            <remote-alias>강력 범죄 발생 수 (건)</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LKO_RKR' />
+            <object-id>[서울_자산__부채__소득_현황.csv_BAB302AF079E4BFCB58E4C1F60914EC4]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='부채/순자산 [%]' datatype='real' name='[Calculation_536772796971253761]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='100*[부채 (만원)]/[순자산액 (만원)]' />
+      </column>
+      <column caption='부채/자산 [%}' datatype='real' name='[Calculation_536772796971819011]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='100*[부채 (만원)]/[자산 (만원)]' />
+      </column>
+      <column caption='서울_자산__부채__소득_현황.csv' datatype='table' name='[__tableau_internal_object_id__].[서울_자산__부채__소득_현황.csv_BAB302AF079E4BFCB58E4C1F60914EC4]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[년도]' role='dimension' type='quantitative' />
+      <column datatype='integer' name='[범죄 발생 수 (건)]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[부채 (만원)]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[순자산액 (만원)]' role='measure' type='quantitative' />
+      <column caption='전년 대비 평균 물가 상승률 (%)' datatype='real' name='[연평균 물가 상승률 (%)]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[자산 (만원)]' role='measure' type='quantitative' />
+      <column-instance column='[Calculation_536772796971253761]' derivation='Count' name='[cnt:Calculation_536772796971253761:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_536772796971253761]' derivation='Sum' name='[sum:Calculation_536772796971253761:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_536772796971819011]' derivation='Sum' name='[sum:Calculation_536772796971819011:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[범죄 발생 수 (건)]' derivation='Sum' name='[sum:범죄 발생 수 (건):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[부채 (만원)]' derivation='Sum' name='[sum:부채 (만원):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[순자산액 (만원)]' derivation='Sum' name='[sum:순자산액 (만원):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[연평균 물가 상승률 (%)]' derivation='Sum' name='[sum:연평균 물가 상승률 (%):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[자산 (만원)]' derivation='Sum' name='[sum:자산 (만원):qk]' pivot='key' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='ko_KR' class='hyper' dbname='C:/Users/tsmce/AppData/Local/Temp/TableauTemp/#TableauTemp_0w7cj3n0tciiey1fa9mmg0w70lzl.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='06/04/2025 11:24:21 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>년도</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[년도]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>년도</remote-alias>
+              <ordinal>0</ordinal>
+              <family>서울_자산__부채__소득_현황.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[서울_자산__부채__소득_현황.csv_BAB302AF079E4BFCB58E4C1F60914EC4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>가구분포 (%)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[가구분포 (%)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>가구분포 (%)</remote-alias>
+              <ordinal>1</ordinal>
+              <family>서울_자산__부채__소득_현황.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[서울_자산__부채__소득_현황.csv_BAB302AF079E4BFCB58E4C1F60914EC4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>가구원수 (명)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[가구원수 (명)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>가구원수 (명)</remote-alias>
+              <ordinal>2</ordinal>
+              <family>서울_자산__부채__소득_현황.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[서울_자산__부채__소득_현황.csv_BAB302AF079E4BFCB58E4C1F60914EC4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>가구주 연령 (세)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[가구주 연령 (세)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>가구주 연령 (세)</remote-alias>
+              <ordinal>3</ordinal>
+              <family>서울_자산__부채__소득_현황.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[서울_자산__부채__소득_현황.csv_BAB302AF079E4BFCB58E4C1F60914EC4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>경상소득(전년도) (만원)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[경상소득(전년도) (만원)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>경상소득(전년도) (만원)</remote-alias>
+              <ordinal>4</ordinal>
+              <family>서울_자산__부채__소득_현황.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[서울_자산__부채__소득_현황.csv_BAB302AF079E4BFCB58E4C1F60914EC4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>자산 (만원)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[자산 (만원)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>자산 (만원)</remote-alias>
+              <ordinal>5</ordinal>
+              <family>서울_자산__부채__소득_현황.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[서울_자산__부채__소득_현황.csv_BAB302AF079E4BFCB58E4C1F60914EC4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>부채 (만원)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[부채 (만원)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>부채 (만원)</remote-alias>
+              <ordinal>6</ordinal>
+              <family>서울_자산__부채__소득_현황.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[서울_자산__부채__소득_현황.csv_BAB302AF079E4BFCB58E4C1F60914EC4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>순자산액 (만원)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[순자산액 (만원)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>순자산액 (만원)</remote-alias>
+              <ordinal>7</ordinal>
+              <family>서울_자산__부채__소득_현황.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[서울_자산__부채__소득_현황.csv_BAB302AF079E4BFCB58E4C1F60914EC4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>연평균 물가 상승률 (%)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[연평균 물가 상승률 (%)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>연평균 물가 상승률 (%)</remote-alias>
+              <ordinal>8</ordinal>
+              <family>서울_자산__부채__소득_현황.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[서울_자산__부채__소득_현황.csv_BAB302AF079E4BFCB58E4C1F60914EC4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>부채/자산 (%)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[부채/자산 (%)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>부채/자산 (%)</remote-alias>
+              <ordinal>9</ordinal>
+              <family>서울_자산__부채__소득_현황.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[서울_자산__부채__소득_현황.csv_BAB302AF079E4BFCB58E4C1F60914EC4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>범죄 발생 수 (건)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[범죄 발생 수 (건)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>범죄 발생 수 (건)</remote-alias>
+              <ordinal>10</ordinal>
+              <family>서울_자산__부채__소득_현황.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[서울_자산__부채__소득_현황.csv_BAB302AF079E4BFCB58E4C1F60914EC4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>강력 범죄 발생 수 (건)</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[강력 범죄 발생 수 (건)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>강력 범죄 발생 수 (건)</remote-alias>
+              <ordinal>11</ordinal>
+              <family>서울_자산__부채__소득_현황.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LKO_RKR' />
+              <object-id>[서울_자산__부채__소득_현황.csv_BAB302AF079E4BFCB58E4C1F60914EC4]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.17f1a9l19x2dlm19xdx6s0q1nvh4].[sum:부채 (만원):qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.17f1a9l19x2dlm19xdx6s0q1nvh4].[sum:순자산액 (만원):qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.17f1a9l19x2dlm19xdx6s0q1nvh4].[sum:Calculation_536772796971819011:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.17f1a9l19x2dlm19xdx6s0q1nvh4].[cnt:Calculation_536772796971253761:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.17f1a9l19x2dlm19xdx6s0q1nvh4].[sum:Calculation_536772796971253761:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.17f1a9l19x2dlm19xdx6s0q1nvh4].[sum:연평균 물가 상승률 (\%):qk]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.17f1a9l19x2dlm19xdx6s0q1nvh4].[sum:범죄 발생 수 (건):qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.17f1a9l19x2dlm19xdx6s0q1nvh4].[sum:자산 (만원):qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;대한민국&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='서울_자산__부채__소득_현황.csv' id='서울_자산__부채__소득_현황.csv_BAB302AF079E4BFCB58E4C1F60914EC4'>
+            <properties context=''>
+              <relation connection='textscan.0eo88x10patgf11d0id2i0aberel' name='서울_자산__부채__소득_현황.csv' table='[서울_자산__부채__소득_현황#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='ko_KR' separator=','>
+                  <column datatype='integer' name='년도' ordinal='0' />
+                  <column datatype='real' name='가구분포 (%)' ordinal='1' />
+                  <column datatype='real' name='가구원수 (명)' ordinal='2' />
+                  <column datatype='real' name='가구주 연령 (세)' ordinal='3' />
+                  <column datatype='integer' name='경상소득(전년도) (만원)' ordinal='4' />
+                  <column datatype='integer' name='자산 (만원)' ordinal='5' />
+                  <column datatype='integer' name='부채 (만원)' ordinal='6' />
+                  <column datatype='integer' name='순자산액 (만원)' ordinal='7' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='부채 및 순자산 추이'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>연도별 부채 및 순자산 추이</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='서울_자산__부채__소득_현황' name='federated.17f1a9l19x2dlm19xdx6s0q1nvh4' />
+          </datasources>
+          <datasource-dependencies datasource='federated.17f1a9l19x2dlm19xdx6s0q1nvh4'>
+            <column-instance column='[년도]' derivation='None' name='[none:년도:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[부채 (만원)]' derivation='Sum' name='[sum:부채 (만원):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[순자산액 (만원)]' derivation='Sum' name='[sum:순자산액 (만원):qk]' pivot='key' type='quantitative' />
+            <column datatype='integer' name='[년도]' role='dimension' type='quantitative' />
+            <column datatype='integer' name='[부채 (만원)]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[순자산액 (만원)]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.17f1a9l19x2dlm19xdx6s0q1nvh4].[sum:순자산액 (만원):qk]' field-type='quantitative' fold='true' major-origin='0' major-spacing='20000' max='80000' min='20000' range-type='fixed' scope='rows' type='space' />
+            <encoding attr='space' class='0' field='[federated.17f1a9l19x2dlm19xdx6s0q1nvh4].[sum:부채 (만원):qk]' field-type='quantitative' major-origin='0' major-spacing='2000' max='14000' min='8000' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#ffffff' />
+            <format attr='font-family' value='YouandiModern HeadRegular' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='color' value='#ffffff' />
+            <format attr='font-weight' value='bold' />
+            <format attr='font-family' value='YouandiModern HeadRegular' />
+          </style-rule>
+          <style-rule element='tooltip'>
+            <format attr='color' value='#ffffff' />
+            <format attr='font-family' value='YouandiModern' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.17f1a9l19x2dlm19xdx6s0q1nvh4].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.17f1a9l19x2dlm19xdx6s0q1nvh4].[sum:부채 (만원):qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.17f1a9l19x2dlm19xdx6s0q1nvh4].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.17f1a9l19x2dlm19xdx6s0q1nvh4].[sum:순자산액 (만원):qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.17f1a9l19x2dlm19xdx6s0q1nvh4].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.17f1a9l19x2dlm19xdx6s0q1nvh4].[sum:부채 (만원):qk] + [federated.17f1a9l19x2dlm19xdx6s0q1nvh4].[sum:순자산액 (만원):qk])</rows>
+        <cols>[federated.17f1a9l19x2dlm19xdx6s0q1nvh4].[none:년도:qk]</cols>
+      </table>
+      <simple-id uuid='{870F4010-8CD2-4F47-BB85-5FA0BA4E56A3}' />
+    </worksheet>
+    <worksheet name='부채 및 자산 비율'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>연도별 부채 및 자산 비율</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='서울_자산__부채__소득_현황' name='federated.17f1a9l19x2dlm19xdx6s0q1nvh4' />
+          </datasources>
+          <datasource-dependencies datasource='federated.17f1a9l19x2dlm19xdx6s0q1nvh4'>
+            <column caption='부채/순자산 [%]' datatype='real' name='[Calculation_536772796971253761]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='100*[부채 (만원)]/[순자산액 (만원)]' />
+            </column>
+            <column caption='부채/자산 [%}' datatype='real' name='[Calculation_536772796971819011]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='100*[부채 (만원)]/[자산 (만원)]' />
+            </column>
+            <column-instance column='[년도]' derivation='None' name='[none:년도:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_536772796971253761]' derivation='Sum' name='[sum:Calculation_536772796971253761:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_536772796971819011]' derivation='Sum' name='[sum:Calculation_536772796971819011:qk]' pivot='key' type='quantitative' />
+            <column datatype='integer' name='[년도]' role='dimension' type='quantitative' />
+            <column datatype='integer' name='[부채 (만원)]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[순자산액 (만원)]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[자산 (만원)]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.17f1a9l19x2dlm19xdx6s0q1nvh4].[sum:Calculation_536772796971819011:qk]' field-type='quantitative' fold='true' major-origin='0.0' major-spacing='1.0' max='18.0' min='14.0' range-type='fixed' scope='rows' type='space' />
+            <format attr='title' class='0' field='[federated.17f1a9l19x2dlm19xdx6s0q1nvh4].[sum:Calculation_536772796971253761:qk]' scope='rows' value='부채 / 순자산[%]' />
+            <encoding attr='space' class='0' field='[federated.17f1a9l19x2dlm19xdx6s0q1nvh4].[sum:Calculation_536772796971253761:qk]' field-type='quantitative' major-origin='0.0' major-spacing='2.0' max='24.0' min='16.0' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-family' value='YouandiModern HeadRegular' />
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='color' value='#ffffff' />
+            <format attr='font-weight' value='bold' />
+            <format attr='font-family' value='YouandiModern HeadRegular' />
+          </style-rule>
+          <style-rule element='tooltip'>
+            <format attr='color' value='#ffffff' />
+            <format attr='font-family' value='YouandiModern' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.17f1a9l19x2dlm19xdx6s0q1nvh4].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.17f1a9l19x2dlm19xdx6s0q1nvh4].[sum:Calculation_536772796971253761:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.17f1a9l19x2dlm19xdx6s0q1nvh4].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.17f1a9l19x2dlm19xdx6s0q1nvh4].[sum:Calculation_536772796971819011:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.17f1a9l19x2dlm19xdx6s0q1nvh4].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.17f1a9l19x2dlm19xdx6s0q1nvh4].[sum:Calculation_536772796971253761:qk] + [federated.17f1a9l19x2dlm19xdx6s0q1nvh4].[sum:Calculation_536772796971819011:qk])</rows>
+        <cols>[federated.17f1a9l19x2dlm19xdx6s0q1nvh4].[none:년도:qk]</cols>
+      </table>
+      <simple-id uuid='{2AAD657F-F4A4-4609-875E-99920418E019}' />
+    </worksheet>
+    <worksheet name='부채 및 자산 추이'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>연도별 부채 및 자산 추이</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='서울_자산__부채__소득_현황' name='federated.17f1a9l19x2dlm19xdx6s0q1nvh4' />
+          </datasources>
+          <datasource-dependencies datasource='federated.17f1a9l19x2dlm19xdx6s0q1nvh4'>
+            <column-instance column='[년도]' derivation='None' name='[none:년도:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[부채 (만원)]' derivation='Sum' name='[sum:부채 (만원):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[자산 (만원)]' derivation='Sum' name='[sum:자산 (만원):qk]' pivot='key' type='quantitative' />
+            <column datatype='integer' name='[년도]' role='dimension' type='quantitative' />
+            <column datatype='integer' name='[부채 (만원)]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[자산 (만원)]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.17f1a9l19x2dlm19xdx6s0q1nvh4].[sum:자산 (만원):qk]' field-type='quantitative' fold='true' major-origin='0' major-spacing='20000' max='100000' min='40000' range-type='fixed' scope='rows' type='space' />
+            <format attr='title' class='0' field='[federated.17f1a9l19x2dlm19xdx6s0q1nvh4].[sum:부채 (만원):qk]' scope='rows' value='부채 (만원)' />
+            <encoding attr='space' class='0' field='[federated.17f1a9l19x2dlm19xdx6s0q1nvh4].[sum:부채 (만원):qk]' field-type='quantitative' major-origin='0' major-spacing='2000' max='14000' min='8000' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-family' value='YouandiModern' />
+            <format attr='color' value='#ffffff' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='font-weight' value='bold' />
+            <format attr='color' value='#ffffff' />
+            <format attr='font-family' value='YouandiModern HeadRegular' />
+          </style-rule>
+          <style-rule element='tooltip'>
+            <format attr='font-family' value='YouandiModern' />
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.17f1a9l19x2dlm19xdx6s0q1nvh4].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.17f1a9l19x2dlm19xdx6s0q1nvh4].[sum:부채 (만원):qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.17f1a9l19x2dlm19xdx6s0q1nvh4].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.17f1a9l19x2dlm19xdx6s0q1nvh4].[sum:자산 (만원):qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.17f1a9l19x2dlm19xdx6s0q1nvh4].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.17f1a9l19x2dlm19xdx6s0q1nvh4].[sum:부채 (만원):qk] + [federated.17f1a9l19x2dlm19xdx6s0q1nvh4].[sum:자산 (만원):qk])</rows>
+        <cols>[federated.17f1a9l19x2dlm19xdx6s0q1nvh4].[none:년도:qk]</cols>
+      </table>
+      <simple-id uuid='{5EE7709E-C79A-4470-91A2-8D06E71B1BDE}' />
+    </worksheet>
+    <worksheet name='시트 4'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#ffffff' fontname='YouandiModern HeadRegular'>범죄 발생 수와 전년 대비 평균 물가 상승률 간의 관계</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='서울_자산__부채__소득_현황' name='federated.17f1a9l19x2dlm19xdx6s0q1nvh4' />
+          </datasources>
+          <datasource-dependencies datasource='federated.17f1a9l19x2dlm19xdx6s0q1nvh4'>
+            <column-instance column='[년도]' derivation='None' name='[none:년도:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[년도]' derivation='None' name='[none:년도:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[범죄 발생 수 (건)]' derivation='Sum' name='[sum:범죄 발생 수 (건):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[연평균 물가 상승률 (%)]' derivation='Sum' name='[sum:연평균 물가 상승률 (%):qk]' pivot='key' type='quantitative' />
+            <column datatype='integer' name='[년도]' role='dimension' type='quantitative' />
+            <column datatype='integer' name='[범죄 발생 수 (건)]' role='measure' type='quantitative' />
+            <column caption='전년 대비 평균 물가 상승률 (%)' datatype='real' name='[연평균 물가 상승률 (%)]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.17f1a9l19x2dlm19xdx6s0q1nvh4].[none:년도:ok]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:년도:ok]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[none:년도:ok]' member='2018' />
+                <groupfilter function='member' level='[none:년도:ok]' member='2024' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.17f1a9l19x2dlm19xdx6s0q1nvh4].[sum:연평균 물가 상승률 (%):qk]' included-values='non-null' />
+          <slices>
+            <column>[federated.17f1a9l19x2dlm19xdx6s0q1nvh4].[none:년도:ok]</column>
+            <column>[federated.17f1a9l19x2dlm19xdx6s0q1nvh4].[sum:연평균 물가 상승률 (%):qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.17f1a9l19x2dlm19xdx6s0q1nvh4].[sum:연평균 물가 상승률 (%):qk]' field-type='quantitative' fold='true' major-origin='0.0' major-spacing='1.0' max='5.0' min='0.0' range-type='fixed' scope='rows' type='space' />
+            <encoding attr='space' class='0' field='[federated.17f1a9l19x2dlm19xdx6s0q1nvh4].[sum:범죄 발생 수 (건):qk]' field-type='quantitative' major-origin='0' major-spacing='20000' max='120000' min='0' range-type='fixed' scope='rows' type='space' />
+            <format attr='title' class='0' field='[federated.17f1a9l19x2dlm19xdx6s0q1nvh4].[sum:연평균 물가 상승률 (%):qk]' scope='rows' value='전년 대비 평균 물가 상승률 (%)' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#333333' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#ffffff' />
+            <format attr='font-weight' value='bold' />
+            <format attr='font-family' value='YouandiModern' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.17f1a9l19x2dlm19xdx6s0q1nvh4].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.17f1a9l19x2dlm19xdx6s0q1nvh4].[sum:범죄 발생 수 (건):qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.17f1a9l19x2dlm19xdx6s0q1nvh4].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.17f1a9l19x2dlm19xdx6s0q1nvh4].[sum:연평균 물가 상승률 (%):qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.17f1a9l19x2dlm19xdx6s0q1nvh4].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.17f1a9l19x2dlm19xdx6s0q1nvh4].[sum:범죄 발생 수 (건):qk] + [federated.17f1a9l19x2dlm19xdx6s0q1nvh4].[sum:연평균 물가 상승률 (%):qk])</rows>
+        <cols>[federated.17f1a9l19x2dlm19xdx6s0q1nvh4].[none:년도:qk]</cols>
+      </table>
+      <simple-id uuid='{05D6A840-233C-40FA-A318-398C239CAB9B}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='부채 및 자산 추이'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='29'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.17f1a9l19x2dlm19xdx6s0q1nvh4].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.17f1a9l19x2dlm19xdx6s0q1nvh4].[:Measure Names]</field>
+            <field>[federated.17f1a9l19x2dlm19xdx6s0q1nvh4].[none:년도:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{77AB3D3E-B447-4815-B1E4-49D233D99A55}' />
+    </window>
+    <window class='worksheet' name='부채 및 자산 비율'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='29'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.17f1a9l19x2dlm19xdx6s0q1nvh4].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.17f1a9l19x2dlm19xdx6s0q1nvh4].[:Measure Names]</field>
+            <field>[federated.17f1a9l19x2dlm19xdx6s0q1nvh4].[none:년도:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{13BFFD9E-C061-4145-87C5-A68F0717D751}' />
+    </window>
+    <window class='worksheet' name='부채 및 순자산 추이'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='28'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.17f1a9l19x2dlm19xdx6s0q1nvh4].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.17f1a9l19x2dlm19xdx6s0q1nvh4].[:Measure Names]</field>
+            <field>[federated.17f1a9l19x2dlm19xdx6s0q1nvh4].[none:년도:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{EF7614BD-7893-480C-AA1C-6C08A4413632}' />
+    </window>
+    <window class='worksheet' maximized='true' name='시트 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='248'>
+            <card pane-specification-id='1' param='[federated.17f1a9l19x2dlm19xdx6s0q1nvh4].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.17f1a9l19x2dlm19xdx6s0q1nvh4].[:Measure Names]</field>
+            <field>[federated.17f1a9l19x2dlm19xdx6s0q1nvh4].[none:년도:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{53F8724A-17E6-4BF9-B1B3-DAF3685B2009}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='부채 및 순자산 추이' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='부채 및 자산 비율' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='부채 및 자산 추이' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAAgAElEQVR4nO3dd3wUdf7H8ddsyWaTTd90UkglIY3QQuiEXoOgdOvdeXJ6eqen/jzbqad3
+      ZzsrYEPPAigCUpQiHYLUUEILhPSQ3nvZ+f2BolGCAbObhPk+H499wO7Ozuczm3nvzOyUlWRZ
+      lhEEhdIAnDp1it27d3d2L4JgcRqAXbt2cc8993R2L4JgcZqf3hk5ciSOjo4Wb8Lf35+MjAyz
+      13F3d6e+vp6Kigqz1woNDeXs2bNmraHRaPD19eXChQtmrQOWmZ5OqSPLsrxo0SIZ+M03jd5Z
+      nrPwYfnNJ/8oA3L4sKnyyMho+fm3X5I9rJH/9MQrct+eznLC7D/JD90xWVZLl16XmJjYIfV/
+      7RYfHy+HhIRYpNbtt99u9hoGg0GeOXPmDTM9nVFHRQdqritl3eYkeoeFAjAqcQ6R/j7EDBqA
+      nQZ6Rccx/89PMqevNe8t30iL3JHVBeHaaX59kOsny6BWa1BJKlQqCXT23Jo4hDEjxlBe12zO
+      0oLQLh26BACQJOn7f2HT8qWYvEPxdHBh0KBY1PXlPPvSh7zwxn/p4WjV0aUF4Zp16BLAxujD
+      8Agv1iedYWBMKAcObua1g/uoUJWxbvthSlw+5uz2T9l6IoehcX1YvnE/Yi1I6EwdGoDa4mzW
+      r17B+laPVvHhG+8AsO6zJZceuriGEx1ZWBCuU4evAglCdyICICiaCICgaCIAgqKJAAiKJgIg
+      KJoIgKBoIgCCookACIomAiAomgiAoGgiAIKiiQAIiiYCICiaCICgaCIAgqKJAAiKJgIgKJoI
+      gKBoIgCCookACIomAiAomgiAoGgiAIKiiQAIiiYCICiaCICgaCIAgqKJAAiKJgIgKJoIgKBo
+      IgCCookACIomAiAomgiAoGgiAIKiiQAIiiYCICiaCICgaCIAgqKJAAiKJgIgKJoIgKBoIgCC
+      IkmYANB0ch+CYFF6rURitD13ep/EKcEoAiAog0YF48LteGKCG042ai5IbozpVdLRq0ASLm6e
+      GB0NAKjUOrx9fPBwdUIC7J2c0apApbbC3c2I1LHFBeEXJCCmhzUf3ebDazd7sSGliuGvXmBF
+      hjuT387o2CWAxtqRgRNm8ZcED8bc+ijGHgFEhvkRO24uTfsW4zb5Sba98QB95j5M5d6lvLVy
+      d0eWF4TLJKC3p44HRhkZ3cvA50cqSHjtApmlTZeHaZE7eCO4ub6MXXsPodHqACgpyCGvoIj6
+      FjWOdjZY2xl5+PmXKdvzPm+t3I3ckcUF4XsutmqemODG+oX+OOjVzF2azcOr81vN/D8w6zbA
+      tIVPEVN3gFUfP8/5M2d5YYoaVzcXqiuqkIG+ffsSFRVFeHg4jo6O5mwFgMDAQKqrqykoKDB7
+      rfj4eLPX0Ol0REREYDAYzF7LEtPzW+pIgJ1Oxrv6CJMD6pFs3djSGMkBuYGQYTIhw74fTqVC
+      rbMlsFc0fzA4d/QqkAEfbw+0OhvcXRywsTXQWFJFaVklkkoFTdU8/dBjzPzLfyirXMj6A4c5
+      fPgwiYmJrFmzpiNbuaL4+HiKi4tJTU01ey2ADz/80KzjNxgMjB8/npUrV5q1zg/MPT3XW0ct
+      wax+jiwcZURnlPjvthI+PXie2sa9AKjUWhzc/TD6R+LsHYyjXSAlBXqabPp0bABUGi3q0lTu
+      fy4NW1s9mz74D14uttjZ2VFXUcJLj91Nee45NibfhY+DhARiNUi4blZqicGBNjw02pUejlqW
+      7ivlg31lVDep0Dt40MMrCNeekRh9w5FUKmoriik4d5jUpDVMGzecz5av6NgANFaXkXKirNVj
+      Rbk/uVNx6tK/tbmcLu7IyoLShLrreHqSG8ODbfniSAX3ramiSudNj0HjcPENw87Yg/rqMorS
+      j3Ny6yeU5Z2nrvInM50pnsbaSrEfQOg+JMDPWcsfh7lwcz8jh0ocuPs7D0r0wYTcEkhzQy2V
+      xTnkpOyh8MIx6qtKaWluvOo4RQCEbsHFVs29w124Nc6JEqsA3q0ZygnJnQqHXEoyTnA2aS2V
+      hVk01Vdf03jbFQArnTWNDfXX1bggXBdJwkpvh9FoZHKEHQv71GPSu/JBQQjfnJMpyFpPUUYK
+      TfU1yKaW6y7TrgAkTLqJfTs2U14qVtwF85L0TgQMmIiHbwij/E3c7HoS2/ocXtxWwaozVZSW
+      HPjV1Zpr0WYAJEmFnb0DPv5B+PgF4ZBoZOOaz0QIBLOwtnMmfMQcSg2RTB3rwQzbPbg3nmfF
+      7lLe2FlMYdX1f8pfTZsBUKkk4keOo2dQOLW11ezbuYmWFvM0ISibe1AsvRPm40Alf3JaR5Cc
+      yhcHSli0u5QLxR33aX8lbQagpaWFgrxcbAwO5GWnk5l21qyNCMpjpbcjdNjNeIUOoCltG3/r
+      fRSq9dz08QWSc+qQLbCTqM0AWOttycvJICV5P/ZOzubvRFAOScLoG07U+LtobqijYf/b/GdE
+      LSl59Ry0GsCR7GMWa6XNANTX1VBfVwNASWG+xRoSbmxWNnaEDp6Bd+/BZCZvxZCzmY/nG9mb
+      VsefVuQxe55lv5kX+wEEi3H0DCR6/O9AJXFo9asEqzN4Z643q49W8vSGAhqaLX9gTJuHQ7sF
+      RPPikuWcOJnCiRMn2LTqI8YNCLVkb8INQmOlJ2TwTcTNepTirFPs/d9TDLTL5tPbffjsYDl/
+      X5vfKTM/tLkEkEgYN46klW/yyhMnqW6QCOgVzdSx49h14Cx1lu1R6MbsjD2IHHsHts4eHFrz
+      GiWZJ5kWZccrMzxZtKuEV7cVY+rEIyLbCIDM7t3f8ftbxtJn6FgA8s8dYP1X28XML7SPJOHs
+      FUzstPsozkjh4KpXMDXUcEusA89P9eBfm4t4d2+pRb7puZo2twEa62rQWNtQXdNADx8/5Jw9
+      9AoNJfnECUv2J3RDGis9AQMmEjhgImd2fk76kc1IssyDo408MMrI/Z/nsepoZZc4FL7NANi5
+      +hAbG8uFlIOcO3eezOTjqP2GWLI3oRtycPcnatydWNk6cGj1fylKT8FKDfePNPKn4S4sXJ7L
+      2uNVnd3mZW0GwOjqwIsP/o7I6fcxYewg8tyaOJNZZMnehG5EUqkI6DeBoLgp5J8/wpkvX6Gh
+      phytGv4+wY1ZsY4s+DCb3Wm1nd1qK20GIP3MeT75cBkbP3uP1W+vJcc2ightoSV7E7oJg4s3
+      EaMXYOvkwfHNS7l45gAgIwH/TvRkXLiBeR9mczir621BthmAwnN7mTB8CEHh0bSUZXI+ezsb
+      LNmZ0A1I+EQOJWzEbMovXmDvp89QX1V6+dkpkXYMDrTh1o+yOZzVNQ+nbzMAAf0n8Le7EvHr
+      4UVmdg7nktZyKLOGXbt2WbI/oYvS2xuJGn8nDm7+nNn1Bdkndl0+Ll8twfwBjjw71YPExRkc
+      ye6aMz9cJQBFWafZvMWAVi1Rkp9DTlY6kf0GW7I3oYvq0XsIYSNmUVWSx77lz1NVnNPq+QdG
+      GXkwwcifv7hIchee+eEqAdDau3HPn/+GtZXE1iWP8I9dF4nsZ8nWhK7G2uBE74T5uPiGc27f
+      GjIOb0GWTT8+r5W4b7gLC4e78PvPctmQ0nW+7WnLVU6IaeTlh+5id76aW+OcufOvzzDcpxkL
+      XYJG6FIk1A49GDTnMRrra/hu+QtUFmW1GkKjgr+Pd2NWXwdmvZ/FgYyut8F7JW0GwMnRlb+8
+      9C+es67jxYd+TxXpbEzLQAWY2nqRcEOR1BqcvYMJjk8kX9OTrGOrSD+yGVNz60sM2lpJvDrT
+      i/gAG+YtzeZgZveY+eEqxwINHDaO+ryjfLA1CUPIUOL6D8OXc6z6ajsNlu1RsDBJpcYtIIrA
+      AZOxd/Ml78x+AvTlpB345feAGhW8McubKC9rFnyU3eXX+X+uzWOBPn35YY4PGsPQmECsgaQ1
+      7/B/W3aLmf8GpdZY4RYYg2vPSOyMPagqziX7xC6KM1Ooqywh9vbbf/GasWEGHkxwJeViPTe9
+      k0lW2S8vPtvVtX0+gGziRNImTiRZsBvB4iRJhWevgQT0G4+dqw85Kbs4umEJNWVtnwQlSTA+
+      3MA7c3vw3t5SnttYSEs3XS++6lUhNBp1q8dkk4lmcWL8DcFKb4dXrzj8YhPQ6mzISdnDwVWv
+      0lBTftXXqSSY29+Rf0xy5/F1+Xz03dWH7+raDEDk+Dv58J8LWz1Wl5nEiOn30v0WdMIPrPQG
+      fKNH4RczElmWST+8mbzT+2ioqfjV10oS3DPMhUfGuvL3tfl8vL97z/xwlQCUZJ5j78GDeHr4
+      ItcUUFrVQOnZA2Lm76b0di749RmFf58x1FWXcS7pK7JT9iCbmtv1epUEDyUY+eNQF+7/PI/V
+      xyrN3LFltBmAivzzlOTn8+WyZbj4R/PnW0fyzOL9luxN6ADWBicC+k+gR8QQGmorSdn6P/LP
+      Haa5of1fVRp0KhJ9iwj3d+HuZbl8e+barr/ZlbUZAM+wgUyYMJGR46YRHeTMn26ZyNZkcW2g
+      7kBSqXBw74lfzCg8QwdQfjGNoxveoSj9eKs9t1djrZGI8LLmjkFOjA+3o54cZr2f1SWP6Pwt
+      2gxA1tFtrFkdyudffElAZDx333UfW/bfQ2FNN93cVwhHryCCBkzCNSCK4syTHFz1KqU5qe1e
+      1TEa1EyOsOe2OCcCjFbsTavhz1/k4TtgKoezLHe9HktpMwBN9TUsXrIEWpopTj5GdtJnFIuZ
+      v0uSVCqcvUMJHDgJo19vCi8cJ+nTZ6koyGjX6+2tVfT11XP3EGcGB9pyobiRDSlV/G9/GfmV
+      l4Jzez+tGaeg87QZAJ+IMXyx7GWsi8/zx/+sRHU8mTOW7Ez4VSZZRu8WyMCbH8HRK4CCc0fY
+      8/HTl47TacfZ5v4uWm6KcWBuf0ecbNR8nVLF3KVZHMqso66pK5yxa35tBiDz2Ne8+6o3p3Iq
+      sba1J37iTDzzSlm9dhvtW5gK5uToFUTYsFso1PhQnr+DYxvfpa7i16/cbbRVMzzElrvinYnp
+      YU1ydj2LdpXw+eEKqhqUt4T/1SvDSYAkqYmIjcPWM5uNa7fR9Q9yvXFprW0JipuCX0wCNYUX
+      0GRt58zOz6/6GkmCCE8dc/o5Mi3aHlmG1UcreeyrfE7m1dOkvPn+sjYD4B4Yx8z5CyjPOMl/
+      VyTx5nMPsSerraEFc1NptHiG9Cds5Bya62vZ//m/aarMZ/z48VccXpLA20HD+N52LBhwaYN2
+      T1oNT64r4KvjlTQreKb/qTYDUJZ3mvsX3kNzTTmV9hH4iD1gnebSSee34uQdxOnty8g9lURT
+      Q+0VfyBbo4K4njbcFufEiGBbSmpaWHG4gnUnKkkrbuz0C1F1NVe5MFYFZ07+sHs8F3E9CMuz
+      0tsRHJ+Ib/RIck/t5fim96kt/+VfQq2CQKMV06MdmNPfEXtrFZtPV/OHz3LZnlrTCZ13H+Lq
+      0F2ShHfvwYTEJ9LcWEfy+rfJP3f4F9/s6NQy8d5NzLnLlz4+es4XNfLqtiK2na0huxsemtwZ
+      RAC6GEfPQEKHzsTe1YesY9tJTVrT6lcQrbUSYR46botzYlJvexpMqXyd1cg/vi7keG73Ohml
+      KxAB6CK01gYCB0zEP3Y0pbnn2PPxU9RVllx+3sVWzW1xTkyJtKeni5bvMup4elMFsldfPlst
+      rth0vUQAOplKrcUjOJbwUfNoaWpk/xcvUpZ7Dri0h3ZMLwOJMQ4MD7IlvaSRVUcr+OJIBXkV
+      zRgMBsZ76zt5Cro3EYBOZHD2JGLMbTh5h3B6x6Vvd+TGGsI9dNwa58ToUAMOejXfnqkmcUkm
+      p/LrqVfIHlpLEQHoBFq9geBB0/CLSSDv9D5ObP4/jFIpt8UamNPfjSBXHUdz6nhuYyEbT1WJ
+      md6MRAAsSZLwDhtEyODpNDc1cGbzEkJMp7l/kj3DggOoazKxeFcpW85UcaG4UeyssgARAAtx
+      8AggdMgMXL17Ylu4j4iabUxPtEGj8mDL6Spu/SibAxm1Yqa3MBEAM9Na2xLYfwJRA4bR1y6f
+      oaaP8HQp51iuhn9vLmLL6WoKqsThhZ1FBMBMVGot/iGRTBmfwCSPPCI175NVWM36lCpWJpdz
+      tqCxs1sU6OAAaPTOzJg3jx4t2by8dA0OXmHcevNYVKZGvlr2EbGT7yRl44eYfOJJCFLx3vKN
+      tNxg23eSpMLbaOCW4BoeCrJD17yZ7ScreOFAOUey6hR5yHFX1qEBaK4rZcOOZNY9O4OXl67h
+      gWdeIeOz+znpNJX/PHYXxT6zCXbWEhvtz0MPPHpDzfxaa1tc/cK4bag3dwfnkFd2nBd35LL6
+      WAXldWKm76rMuApkQ2iQBxvOnuOC6iDGu+dT3ezAI/fPZ3j8SLLL6tBqtWg0GqysrNDrzb9D
+      R6fTYW1t3WG1ZFlGY+uMV1gcUdGx/N4rmXBNGi9vLaLedwzLj6UBOsw1aXq93mLv3Y1ax4wB
+      qCMvvxJvD3eqnEKozUqnwSGcxZ/u4R/PPsqdC5/ANySM8PBwIiMjkSTJfK18Lzg4mKqqKsLC
+      wn7TeNRW1rgHRKP3CCM1p4R+2lPMtlnLsbQCHsnxpcUplKEx/ZhaZd4rKOh0OqKjo2mxwNX6
+      oqKimDp16g1Xp0MDYGP0JaF/KKdyKhkUG8ril/7FPTcvZIBkzQuv/JeIqQ4c+uIlvIbfzs3j
+      B/LemiSOHz9OfX09a9as6chWrig+Pp7i4mJSU1Ov6/V6exe8wwfTI6IvxaV6pJMr+YN/Kn1t
+      SvnP+oss3VdGXVPmpWH1elasWNGR7f+CwWCgtraWlRb40QZLTE9n1OnQANQWZ/HVsvf5atkP
+      j5zhwUPfXH5+76lHADic9mJHljUrSaXG6BuOd3g8XmEDqSjMIuf4duJ1J3h0hA2phQ1M+CSf
+      0/niutndkfga9IoktHpbfCKH4R02CFsndwrOJ3Ng5ctYVaXz3CRnhgXZ8vbOEhbvKaG28Qba
+      mlcYEYCfkiScPAPxi0nAPTiWhupyslN2k3NyL3JdOdOi7Hn2th6cL2pg+pJMTuSJ4++7OxEA
+      QK21xqvXQHwih2Lv5kdZ7jmOrH2LstxUmhvr8XbQ8PjNnkyKsOelb4t4L6lUfOrfIBQbAEml
+      ws7oQ4+IIXj1ikM2NZN3Zj/HN31AdUkecOmKyDNi7HliojsXK5oY/2Y6p8S6/g1FUQGQZdDo
+      bPAI6Y9fzEgcPQKoLMzi1LZPKco4QVP9jyeQG23VPDPFnTG9DCzeXcri3SXUiE/9G46iAlDW
+      rCdk3B3U1taTn3qQ0zuWU1mYDfw4Y6skmBRhxwvTPMgsbWLmu1kcE+fa3rAUFQA1zWQd2cTJ
+      fRtpqvvlNe6NBjVPTXRnapQ9b+4o5u1d4lP/RqeoADhomyjOOf6LmV8lQUIvA89Mdqe63sTU
+      RRniU18hFBWAK3HUq3hiojuJ0fa8u6eUt3aWiCM2FUSxAZCA4cG2PD/Ng/omE7Pfz+pWv3Au
+      dAxFBsDeWsVfRhm5Lc6JpfvKeHVbMdXiU1+RlBUA2UScv567p/jT1AK3fpTNnrTazu5K6ESK
+      CkBvq0yeGmXkvd3VvL69hNJa8aPfSqeoABS32PPXtZV8niSudS1coqgAFJhcKC7+9Z8REpRD
+      1dkNCEJnEgEQFE0EQFA0EQBB0UQABEUTARAUTQRAUDQRAEHRRAAERRMBEBRNBEBQNBEAQdFE
+      AARFEwEQFE0EQFA0EQBB0UQABEUTARAUTQRAUDQRAEHRRAAERRMBEBRNBEBQNBEAQdFEAARF
+      EwEQFE0EQFA0EQBB0UQABEUTARAUTQRAUDSzB8Bab4uNXgeAlc4alQRIamxs9OYuLQi/yqw/
+      kBEzdgGzBhqpsulJ5pZ38J30N3YueRi/SffhXbKbV/63CfHTdEJnMusSILRvPNryTHKqtQT7
+      GvHy78W9T71CFCm8/slmMfMLnc6sAci/eBE332BC/VwoLCoDrZ6Rg8LZtGknjSbZnKUFoV3M
+      GgBvb2+yzh7jeFo+9gZbaKjk0Uef4+FXFtHH39mcpQWhXcy6DbB12VuUBxlpylzLjgNHCCj+
+      F9lHt7LjVB7BHp5IGaWI5YDQmcwagIILx/n6wk/ub11/6T8l+8g0Z2FBaKdWARg5ciSOjo4W
+      byImJgZJksxeJzAwkOrqanr37m32Wr1792b69OlmraHT6YiIiKClxfw/+G2J6emMOq0CsH37
+      drMXvhJZllmzZo3Z68THx1NcXExqaqrZazk6OrJ69Wqz1jAYDLS0tJi9DlhmejqjjqJ+KLuo
+      qIiqqiqL1EpLSzN7jaamJjIzLbMyaYnp6ZQ6sizLixYtkoFOuyUmJnZqfXFT7q3rLAG0BiZN
+      nYKrgw1VOSdZs/s8c+dNxxqZ7euWU2kbyM1TEkjevJyk0wX0GzmeSD9X8s4dYdPe4z+OR+fA
+      TdOnYm9jRfH5w2xOLmDenCloWprYuHoZsnskN00Yzu5V75Oc3cjE6VNwc7DHWVvJG4uX09Te
+      fiUNA0aMJ9zfFVVdMctWf8vIqTPwstdz6sAWknOamDEjkcbM/Xy+5RBewbGMGRyFRmpi4+pV
+      5JbXta+O2poRYyfi7+GIqSKLT9fvZ/qsGThqtRzauZb0WjtmJE7iYvJGvvnuLIExQxgSE4xG
+      rmH156sprWv3FBHUZxhDogNQ08TXq1fi3XcCsUHuXEw9xDf7LzBl6iQcbHUUnzvE5uNFzL9l
+      Mmq5mW9WfkJOeWN73zii4scQG+KFqrmaVavWEZMwnWAPe9KO7iIptZypk8dia21FRvJOUkp0
+      zEgcx8mtK9idktPuaQEw+kcwcXhfrLRakjatpNYxgrGDwqgvzWL52p3Ej55EF1oCSLJWq5W1
+      xhh536FV8r2PviO/cPdYuefQ+fK2ZS/IOpVavunBt+TH58bJOPjKSd9tkT10VrJapfrZ+C6N
+      R+89RP5uz//kR/61XH5kVpwcOeleed3iR2QrtVr+3T8/k+8ZH3LpE0Cjla16xMrJe1fJdtfY
+      t1qjkbU2rvLne3fIc2f8WV773hOy0S9G3rFjjeymt5IDRiyQv3z1LzIgP/HBWvn24RHyX99Y
+      Kf9xbOS1fUpptLLWIUDednybPH/e4/KHz90le0SMkfdsXCrbSCq5/y2PyO88eouMylpe9PW3
+      8thgf/mlL7+VE6M9r6mOSq2RtVqt/Ni7X8n3LrhL3r3lM9nNwVn+ZOMOeViI8dLfJ3CUfOzb
+      D+S/vfyl/OBNsXJM4gPyujcflKVrfd90NvKb67bKC2b8Qd626nXZxegnb9i+Re7lbidrtVrZ
+      PW6OvHvZP2UrlVqefN8r8rN3DL/m+UpSqWWtVitPufdl+a0n/yiv27ZNDvd0lv/+zjr57nG9
+      ZI1G24WWANbO3H3P7dTVwb6vdxHUdzY7n3uQ9BRXVG8swEXbQvPlbzskVFo9CVPmEjc8iCf/
+      8jhlzd8/Y+vOfQsXUFmrYseGvfQasZD/LTnA2eI6HJ58AoPUQovJhPZyXVeeefx+1i9fQc21
+      9KuyInHeXThbQ9GRJOzCIjh9cCXFWWmkyy4EO2nIamq+PHhmZh7xY6dg72fH0tyi9tfRGljw
+      uztRtcDZbdvxio0leccT5J8qpsztKXz1Jpqaf3hfZJoaVcQlJODnas/ea5keYOC4WfTzt8Wh
+      Op1sG1fKUo9SWFHKwTOFxMYOou/UECobdWzaeIDIKbez5KUTHG1S4fnIX7EHKtpVRWLMTXfQ
+      01mi+UIyKt9gMpP3U1KcR0qRTP+YgUyOjKRGcmTjt3tpMrXQ3Hx933L1jBlJ4pBgbD1UHDtV
+      TUR8PmmFpSQlJTM3fhj1Pcd1oY1gYwi3DfVj4MwHkE0yD7yegKenJzaVXliX5lHZ8LPhW+rY
+      tHotUx7eSIDd4xwuu/SwyjOKm/s4Mnj+E8gmmX/0mo2Hhzv2Bn/Iz6a2ufVoevSfQD/1GUa/
+      seLa+tXZcdfMcdw+fw7vVdYzaM5jxIV4ojXY4alrJL+y9R/N18+LpKWv4WIXgau9HZDfvjp2
+      ntwzbSBxExfwgSwz48G36Ovpic4o4dxYSlEt+PwwrKmBh2ZPRqe24umxc69teoApM+aw4/Xf
+      89aidzFGT+bOUSPQSip8vZw5YePL/HA7xv7uGUwmNc/3m42nlyMush9Nubnt//BQaZh9y028
+      +Nc5LF5SQVDC75hxkxcaKx09nKw46tWXAa7lzP6/1zCZftvRYv3G3Iw6bQn/fHMJ1i4BzLlj
+      NrZaDb7+vhRVXeC2iSNRP/30008fOnSIDRs2/KZiv0WvXr04k36RIX3DqW1W4elszc69R7hl
+      3jxiIsPZ+Mk7lNn4MqBPGDZqE5np6di7+6GWVBikMtZ9vYt6+dK4JBsXhseGUNOixWinZteB
+      k8ybN5voqF58+f7btLiGERsVjFVLAxmZ6cj2fvhqCtly4My1Na22IjKmL5ia8fM2cnRfEv0m
+      zCQqPILcA9/wXXYDQwf1w9VeR252Jo1WRtzt1Oi0Kvbs2EZhVX376mht6BsTTWOLjL+XI0m7
+      9zFu5mx6h4Vz7JvlpNYZGNw/Gke9iuzMDLSuQUwcPRiDqo6tm7dSUtv+bYCA3v1wtGrG6O7J
+      xVMH0IePYni/Puirz/Lp14eICQ+kASvcDLBr/2nmz59Nn8hQlr/3FqdzSttXRFLRK3og1lIj
+      Xp7unDu8l55DE+kXEUXdhb2sO5BBdIgXzRoD9tpm9O7BDIyNxFbTRGZGJmXV7XzfADf/MPyN
+      1uidPGkqTidT9mLGqAH0dIPF76/Ev1dkV9oGQFapVJdukvT9ffXldXxJki4/L/3kviRdYV32
+      h+F+ZTyAjCRdcRztuUnS9/2qpMv31Wr15W2R1n1IrXq6pjqqn9VRqWS1+sf+f6xz6TmNWn19
+      da7w3qjV6svr91d7X6/vfWtd50p/v5//3a+p1hVeq1arL/+9JZWqC20DwC8WeSbTj6sRsiwj
+      yzI/eaD1/d8ynuvsV5ZNtB6ViR93ysqYfnbE68/vt7uOydSqR9lk4scyMqZWTeLF2dIAAAFa
+      SURBVJj42Vpe++tc4b356V7mq72v11an9fv2a3Xa+ju3o1Dr9wZa1ZFNJnFKpKBsIgCCookA
+      CB1Cr7fh8uGMkoaAQH9UgJ2dPY6Ojjg6OmJvsOnEDq9MBEDoAFY88sYyBvpIBEUNZPy02az+
+      8h3s0fHC3+5h9OjRjB49msH9o7HqYnNcl9oIFrorFW49emKnk2gxeuLbwwuNWgJUaKpzWbly
+      ZWc32CYRAKEDNHJk/14GT7mTE+kFHD9yhMKKwUADJ6ttePW95UgXkzly4hSrvtpAdUPXuRxC
+      F1sgCd2Tifde/y8NjdWsXbOO7w4dZuM32zHpdHyybCV59XryT+1h3ZY9yKqu9ZnbtboRui/J
+      mmlzFpBbKtEEZKWl4+DiipePJ0c3vIupViIkJISyixmkZhV0dreXiQAIHaP4GHFDJvPjma0y
+      sgzZeVmd2dWvEgEQOpDM9e607Sz/D/BlfT1ibO0nAAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='시트 4' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAAY80lEQVR4nO3daXRc9Znn8e9dat+rtFq2vGI7NsZ2AIslCWnCDglhCR3SOXSTySHQDUOY
+      Oczp9DndL2Z6ciY9YSaHSdNZCBCgEwLdHQxpsGMwJmaxY8ACY4wXeZFl7VJtkqpKdeveeSEv
+      qCUhS6pNqufzBrmouvVIur+6V////T9XsSzLQogKpQPcf//9nDhxotS1CFF0OkBbWxuWZeH3
+      +yd5uoLdbmN4eBhV1bDpGpmTX6uKhWFaaAqYKKhAzjQJhUJEo9HCfyd5Vl1dTU9PT6nLmDKf
+      z0c2myWdTpe6lCkrxc9cP/VFa2vrpE92eALcec89vPDID8iFF7H8M2s5x5Mi3LCI6CAcbWlh
+      ZY0GkUVseu4pOqJDrF69mr179xb0myiEpqYmPvzww1KXMWWLFy9mYGBgVoa3FD9zdSpPzgzG
+      6RvMYlcVauvnYddAC85HiR3nrfcOcsmlF3D7t+6i+dXn6YgOFapmIfJmSgHQbQ5cDjsut4vL
+      PncxH+zaxosvbSVQO58VK5dyovUEb772GlfdeDMu25Q2LURJ6JM/5RNPttnZ/sJvSOPkmV//
+      CofLSybWyWPP/h6f3WJbex8Bl0JWc6NpGmTNQtUtRF5MKQDpoSRHDifHPJ4YOErnya970gBj
+      nyNEOZLzFFHRJACiokkAREWTAIiKJgEQFU0CICqaBEBUNAmAqGgSAFHRJACiokkAREWTAIiK
+      JgEQFU0CICqaBEBUNAmAqGgSAFHRJACiok1pSWQl+PIXnNx+jRu7/RjDN4bpiZrc/79jpS5L
+      FIgE4D9wORWqghqQA7dG1ih1RaKQ5BRIVLQpBUCzu1ixcgU2FVy+EOcsW4LLrlNdP5/FjQ3Y
+      XT5qwj4CkTpCPlehahYib6Z2CmSZXHrD18j85Ad85S/vZuumrdx7303YGODd4yYXainObYzQ
+      k4jz2GNPFahkIfJnSgHIZTMkB1OgOfDrWT7ev49v3ftXtGx7ho8/TnPrtRey4dLz+bv/9gA5
+      xcZFF11IQ0MDXq+3UPXnXeOCGNB/+t9Oh4OmpqbSFTRFdXV1pFIp4vF4qUuZshUrVhT9PacU
+      AI8/jEezqKoO8FFrnGuuvIIdv/s1NY2L+dwFFjt2vEvfwWbWf+kmDv/yZ+zYsWPWNcddGHDB
+      +WcCm85k2LlzZwkrmprZ3BwXKPrPekoBGErGePonD4Nl8U7LozhstpH26JqOplhkDZO3VbCs
+      LYC0RRTlb0oBsCwTwzizY2eGhwEwc8bp3d00AeSmM2J2kGFQUdEkAKKiSQBERZMAiIomARAV
+      TQIgKpoEQFQ0uRx6jlg6X+OHDwRR1QEATDPCPd+P0tknE5KfRgIwR6iqgsf1yQO6iqKUrJxZ
+      Q06BREWTAIiKJgEQFU0CICqaBEBULLuiSABE5bomEJQAiMrkU1Uu9/klAKIyXRsI8sZAUgIg
+      Kk9A02jyetkUj0kAROW5JRRmSzzOgGlKAERlmWezca7LzSuJkbYxEgBRUW4KhXk+1s+plq8S
+      AFExGu12Gmx23h4YOP2YBEBUBAX4ejjC87EoWetM255pXw7t9oVoqIvQdeI4Dn81HptFe2+C
+      oAvSihttOEE0mcpH7ULM2AqnE4ei8sfBgVGPTzsAd3znO+x6/R2uv/pPcDs03msz2aAOnWyO
+      m+Cxx56ccdFC5IMK/Gk4wnP9/WP+37QDkEpnWbhwPorNRazzEPv2nWqOewF/++B3pTlukc2L
+      ZIATox5bt24djUlbaQqagv96yxFcdhNVPYJ5exUPb1xIYih/a7UakklCDhf+BfP5j7/Jab9L
+      ejBJV1cnRuIwjSvO5dILLHbseI++g8189gppjlts5zTqcENo1GPNzc109Jb/kkjt1ggOu8pI
+      S02F5ubd9ETzU7eOwg0NDfy/3hZaMplx/v80PfvLR9FUFcMwUF99C02BrJEbaY7LFrCkP6go
+      vYu8Xrqy2XF3fpjBKJBlmhjGyGiqmTPIGgZgYZoWlmliSQBEiTkUhRuDIf41Ovbc/xQZBhVz
+      1mU+P/vTKTqy2QmfIwEQc5JLUbg6EOC3seinPk8CIOakqwNB3hkcpM/49PvcSgDEnBPSNC7z
+      +dk4yac/fEoAdJs9r0UJUSzXB0NsTcYZMicfSp0wAFV1C1i4/DykvZiYTSK6zvluD68mEmf1
+      /HECoLBoxVrmL/kMlgV2hzPPJQpRODcHw7wUj53Vpz+MGwCL9NAA8WgvrQc/YDgtF7SJ2WG+
+      zc5ih4OtibO/R/I4M8EK3e1H6Wo7nMfShCi8r0civBiLkpvCa8Y9AgA4HA5supafyoQosKUO
+      B2FNH3O582TGHAHql67hzm/cjGIaOOw2tm/6N7a8/UHeChUi3xTgtnCEZ/r7pvTpD+MEIJWM
+      8fqrv8fImfS0t5JFjgKivK1xuVGAD1JDU37tmAAMpdMsWrUGPdGPMdiHafNx/HhbPuoUIu9U
+      4LZwmCd6e6b9+lGM1CDhqlpqQi7e/fDQTOsToqAu9HiJ5XIcmuBy58mMOQJodgc7Xv5Xdr3/
+      EV+68Ru4EgfZPeMyhcg/m6Lw1WCIR3q6pr2NMQFYvOJc1q1pIKc6UI0UNrtjRkUKUSif8/o4
+      Npzh+PDwtLcxJgAHdr8Bw59l7erldB87yO92Nc+oSCEKwakoXB8I8g+d7TPaztiJMMviwIfv
+      cuDDd2e0YSEK6Up/gA9SQ3RPcrnzZCa8GK5x4Qrqav0z2rgQheBRVS73B3jhLC53nszYI4Ci
+      cs66z7O23kNLe5Z4LE0qM/1zLCHy7YaTvf1jualOe4015gjg9NfxnTtv4qOPjvDl2+7gq1d9
+      bsZvIkS+hDSNCz1eXo7H8rK9MUeAdLyd7/3N/+TGK/6E5574J/YdmP4QkxD5dmsowpbE2S12
+      ORvj9gXKDvTw4qaXsety6iPKR61uY6XLyZN905v1Hc+4AVBVlezwINnhkQVh47b4UVScDjvD
+      wxlQNDTFIpuz0BQwUdAUCyNX/l3JxOxxazjMxmiUTB57To0JgLt6MX/zwF2kElGSaYP+I808
+      vXHrmBfe/uffpmXPH9l3sJU/v+M2+gag9UgLK2t0iCzipd/8ko7o1C9OEmI8i+0O6m02fjqQ
+      zOt2xwTAHB5mIJViQX2Y5379L1gOz7gvXLhgPm2tx7nimtWY0Vbe3JPia9c1cc0Xmnjw3u/Q
+      FU8TCoXw+XyEQqFxt1GO3K7R4wKaqs6K+v2+sWu3A4EA6ZkPlBScoo6uPRAIMGp037L4U7eH
+      rZaFL8+/izEBsMwcQ2mD/c27qF11MXS9P+4L29vbSQ+b6OkeqF7MJZ+1+OPO3QydOMh5l11P
+      V+w5fFXVBAIBqqur81p0IXk8aeDMMlBV06iuDpeuoLMUDBnA6E/HcDiMqZX/5eyqEuPUQiyA
+      SCSCaj/zQfR5j5dUVxfH3S6qveN/IE/XmAAMD/XyyuZNRNwKe/ZvJZtJj/vCpx7/Gbqqsssw
+      UDUdTYVsNsebKlgoKJZFR/8BbDYbBw4cyGvRhbRukQs40x06m83OivqttA6M/nQ8cuTIrOgO
+      nctF+OSI/OHDh093h3YqCisbFvDD7i66ZjjrO54xAXAG67ny8ssY7I3zxWsu54/b3mTztrfG
+      vNAyTbInh6LMnIF58lA78pCFtMYV+XCFP8D7qaGC7PwwzkSYlc1R29CAplg0v79nzPmZEMXi
+      VlWu8Ad4MQ+XPExkzBEgZ2SIxaIkkknSqoeG0Cz4K0rMSTcGQ2wfSBLPwyUPExkTACOT5KnH
+      H2cg1k9yaPzzfyEKLaRpNHm8fK+ttaDvM3YUKDdMR/vMrrEWYqa+GgrzcjxGqsA3Whk7EVaz
+      hL++704UwOF08sH2l3j6hdcKWoQQn1Rvs7HK7uJXfb0Ff6+xw6CJHjY+v5Hzzl3BvsMd7Nv1
+      esGLEOIUy4LbQhFePJHfSx4mMmYUSNF0bv7mXdRWRbj2ixtQpDu0KCKzR8M9rPNGni95mMjY
+      UaDhIR7+/veYv3ARfbEhDFNG9EVxWBYM73Tyq+4eijV9N85E2Dzuvf/bpOLtdCZsaIll/PzX
+      LxapHFHJzC4NMgrH9OJ1JB87DJoaJJnJ0rb/AAfae3G78nvthRATybXq2C9KU8xGVOPOAxw9
+      tJ/BFMxbvAJPrjjnYqKymVGVXJeOfcP0OrxN15gA2FxBFi9dyrFkJ2+/txtjIH+rb4QYj5VW
+      SG/2YG8q/sTrmABkEh384O//vuiFiMrkUBSGf+fFdUEGfenEN7QuFLlNqigZm6Jwb00dvpUG
+      +qrSrD+XAIiSUIA7IlXEcgbGmnTJbkYqARAlcXMoTFDTeaK3B7MIM74TkQCIorvaH2Cl08mP
+      uzunfEujfJMAiKK60O3hCz4//9jdVZRrfSYjARBFs9zh5M8iVfyoqyMvfT3zQQIgimK+zc7d
+      NbX8364Oegq0vnc6JACi4CKazv21dTza082xGdzNpRAkAKKgPKrKA3V1/Dbaz0fp4l3kdrYk
+      AKJgbIrCd2vreSOZ5K0p3sG9WMZtjns2XG43TreXdLwXT7gej82ivS9B0KmQUVxo2QTRpCyq
+      r1Qq8JfVtbRk0mxKxEtdzoSmHYC777mXtlia1nde50tXXMzuNpMmZZBzF0boSSR5/LGn8lmn
+      mEUU4BvhKoYtk2f7+0pdzqeadgAU3YbPq1K3cAmxjlY+2pfm1us2sOGS8/nbB7+LoehcdNEF
+      NDQ04PV6J99gmWhcEAP6T//b6XDQ1NRUuoLO0rxIBjgx6rF169bRmLQVvZZVvX2sD4Z41qZx
+      4ZLFkz5f14/CJ9aArV+/nvjgtHfNKZn2u/zi5z/n+lu+TqzjKI0XXcylF1jsfPtd+g82c/6V
+      N3H4iZ+xY8cOVq9ezd69e/NYcmEtDLjg/DOBTWcy7Ny5s4QVnZ1zGnW4YXRv0Obm5qL3Bv2C
+      18cif4C/PvLuWd/Fxbg1Ao4zf47u3r37dG/QQpt2AOL93Tzzix9jmSZvvLcHTYVhI8dbClj8
+      HqUMZvlEca11ubkhGOJ/dbTn7RZGhTaj44x58pvM5QxOTeyNrKGX5riVZonDwR1VVTzU2UF/
+      rnwmuiYjw6Bixmp0nftq6vin7m7as8Vf1DITEgAxI2FN54Haep7s6+HQBPeSKGcSADFtDkXh
+      P9fW8Uoizu6h2Xk/OAmAmBadkVne5qFBXk0mSl3OtEkAxJSpwLeqq+nKZtlYwJtXFIMEQEyJ
+      wshyRpeq8nRf76wf7ZMAiCm5wh9gtcvFI91dGLN+95cAiCm4yOPliz4fD3V2kJ0jE50SAHFW
+      Vjld3BwK86OuTgZmySzv2ZAAiEk12Ox8u7qGf+zuLKvljPkgARCfqkrXeaC2jp+X4XLGfJAA
+      iAl5VZUHauv5l2g/+8pwOWM+SADEuByKwv21dWxPJthRpssZ80ECIMbQgLuqazicybC5jJcz
+      5oMEQIxxR1U1w5bFM/19c2Ck/9NJAMQoXw4EqdZ1Hu/tmfM7P0gAxCdc5vOxwevl4a5OhufI
+      RNdkJAACgHUuN18OhvhhZwfpCtn5QQIggGUOB9+MVPHDjg7iZdK0tlgkABWuVrdxT00tP+3p
+      ptOYXcsZ80ECUMH8msaD9fU82dvLwVm4nDEfJAAVyquq/JfaejZGo7yfmp3LGfNBAlCBbIrC
+      3TW1vD80yPaByr4R+rQDoGo6TocDBVA1DV3XQFHRVBVF1dA1yVY5UoFvVVXTnc3y21m+nDEf
+      pt0Yq7p+AeesXEujL0OoYSH9A3DsSAufqdGxwgt5+dkn6YhW7qG1HCnAbeEIdkXh0b7eUpdT
+      FqYdgPp5DTh0C3z1WNFW3tqT4tbrmrjm8xt48L676YqnCQaDeL1egsFgPmsuKJdz9JFLVdVZ
+      Ub/PO/ZGu36/n9Spy/cti4sVlbWRKn7U242vjL4nRR1du9/vJ1ukqYhpB+Dzl17Mb556lF1q
+      kHu/eRUrDYu2Y21szya5+qavcfSnv6C2tpZQKERtbW0+ay4ory8FnLn0V9c0amsjpSvoLIUj
+      BjC6PUlVVRXYNAA2uN2si8Z5NJshWFNTggonpipR+MSFF9XV1ejO4pxCTzsAv/rnp3E63KRj
+      nTz6zMv47Batnf34nQqG6sIwcuzfvx9d19m/f38+ay6otQtdwJnu0MPZ7Kyo30zpwOju0IcP
+      H6aj12SV08X66hq+33GC3jJc0ZXLRfjkn6MtLS3l3x26r7vj9NeJwVa6Tz2eBpi714/PNgvt
+      dv5TdTX/p7OjLHf+UivOXQhESYR1nTtr6nisp4e27NxbzpgPMlY5R5lDCveF6nmmv4+9c3Q5
+      Yz5IAOYgy4DMSx6eb4/xztBgqcspaxKAOcQywcpAZosbtcHgfVtlz/KeDfkbYJawKwoBTcOr
+      agR1jaCmE9A0qnUbXk2lTrUx9LQdRbHQGg3sTWl4udRVlz8JQInogF1VcSgKXk0jpOmETu7Y
+      /pP/9msablXFo6lYFiTNHIlcjnguR8wwiOVyNKcGSeRyBF3w32/3jRzTVVDGzouJcUgA8sym
+      KHhUFa+qEdC0kZ1Z1wlpGn5NJ6zr+DQVFQXz5ORPMpcjmsvRZxjEDIPubJZoziCZyzFkmgyY
+      5qS9OM8xdZTi3xF11pMAfArLAsUaOf3QFQWvqp4+9Qie3KlH/quP7PSahqZAyjRJ5nLEciOf
+      2FHD4NjwMPFciphhEM/lGLZMDMsiBxWx+LxcSQAmkP3YRvYDB640/I8GLyowZJrEcyOnHlHD
+      oMcwOJRJE8vlGDi5s1fSetq5QAIwAX2hgdZgkEjk+Lvv9zNsya1f5yIJwAQUl4UCWBmLjHyq
+      z1kyDyAqmgRAVDQJgKhoEgBR0SQAoqJJAERFkwCIiiYBEBVNAiAqmgRAVLQ8XAqh8rnLL8et
+      K7z/UQuLQgrD3vn0HHyXtl7pDiHK24yPAN55K2laGqJt0M3NX72Ou+7+K5YEDNn5xaww4wBo
+      mk7OMMjlDHRdR7c70GU5kpglZnwKFG/7iP19S1lZZ2PjC5t4f/tmlMhSqv0OehKZfNQoRMGc
+      DoDT6UTXp5eH7Vu3nP66vxvgOGDD67Xhcrnwer0TvbTs2O0ucrjPPKCaeL3l31TK5dJH1w24
+      PRm86eK0GJwJU/GQ48xZg8eTIZUtTt2KZVnWLbfcwtDQEG63e/JXTNHSpUtpaWnJ+3YLbc2a
+      NezZs6fUZUxZQ0MDqVSK/v7+UpcyZaX4mZ/+yO/p6SnIG3i9Xo4dO1aQbReSzWablXWnUinS
+      6TSJRGLyJ5eZUvzMizIPoNnseL0elJNfO+wj7QvcHg8jreEVPF4vaon+dlZUDZ/Pi6YqKKqG
+      y+ng0KFDOF1ubCfvdONye7Dp5Tdt4vZ4cdhGPsfcbjfd3d2k0hm8npGjuc3uwH6yRXo50fRP
+      7BP6yD7RcvjI6d+DbnfgtBe+zUVRlkRGaupZtnI951RZRObNpzOhsPf151n+xds4tu0J3Guu
+      xdPfy9LVIR5+5JlilDSKNxhh0aJzuOriZSSUEMdP9GLv/5AT+jJW2Fp5s8PNl1YGqFqwgIce
+      +jG5MlkhqdndLF68mOu+ci37P+7EHOyksSHExlffYcX6S6jK9bBgUSNxvGz550c41l8+d4IM
+      19SxdMU6VtVrBGob6IhZnNi9mZitnivXzeeZ1z/m9stX89BPni5oHUX5SFu6bDkuPceAGiDV
+      cYi33tnHutULOdEdw6Yp6HYngUAA1SrNTZqr5y1iXsTD0eN9VHtMtrz8GudddD5Hj7fjdNjQ
+      NA1N0wmFQmU1dW5zB1m+dAEnjhzhM8sb2bZtK555yzhv5Up0YxAl1EjnwffYtbeNdasWlbrc
+      UZYsXY7bZhI3vWS6D/Pmrr1cddVl1IdcHDpyjPa246ha4Y8ARfl9brhgPR817+SVV/9AZMEy
+      1q9fxbHWLoI+N16fH6/HxbHDR1H00nR2Wn7uega6DvDKtu1kVS/nX9JE56HDhEMBXG4vx5q3
+      8W9bdjKQSpdVZwh3zSIaPBabN/2eo71J1q5dhz0TY+2683hvxx94ZdubLFi+hvXnLqXlaHup
+      yx3lgvPXc2DPLl559Q+EG5awfv1qrEyaZNteXnt7N4FgCKfLjdNe2JOU06NAhfrjY/Xq1Rxr
+      a8ftsDGYjKM6/XhtObqjg0RCASzTIJZMEQr4iPX3MmwUf9jO6fbi97rJpAZJ51TqIj6On+gi
+      HImgKhbxxBALGmrpbD/BQKp85jZU3U5VOIiZy9IXHWDhwgbaj7fi9IVw2jSS8ShOfwRbLkV3
+      f7zU5Y7i9QdxO+0j+4TDh89u0R8fwB8IkEkNothc2HWVZDxKKlO4O9gXJQB79+4tyLaFmKly
+      OqUVougkAKJkbHb76aHv2rp6nHYbwWCQYDBYlCFQkM5wooSuuOUvaN/xAoQXcPONX2HXHzaj
+      WcMc7Bigr6uNdF/hzv1PkSOAKJmhwSEWL1vOgnm1qFj0JYfwVc1nSeM8fF5PUWqQAIiS2fHq
+      JjS3iy2bN7PpldfYf+AwB2J26jwmiaFsUa4MkFMgUTLZ4SGGDJ01560lnejByJm0vLOFFsAy
+      izMpKgEQJWNmh3j53/+9pDX8fyVMel0wL8fGAAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
